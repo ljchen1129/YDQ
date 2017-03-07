@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qoq-5a-5ku">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sports View Controller-->
+        <scene sceneID="L0d-Z7-4nv">
+            <objects>
+                <viewController id="RZj-h5-DzJ" customClass="SportsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pt7-1R-8SX"/>
+                        <viewControllerLayoutGuide type="bottom" id="4hT-iy-s2E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nvl-LS-BPK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="57l-sR-nuL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5f-yK-oij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="-1095"/>
+        </scene>
+        <!--悦动-->
+        <scene sceneID="o0t-Wd-mVk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qoq-5a-5ku" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="悦动" image="tab_icon_sports_normal" selectedImage="tab_icon_sports_select" id="iyI-7X-EKb"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Yb-Dk-DuV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RZj-h5-DzJ" kind="relationship" relationship="rootViewController" id="wHr-a6-Zcg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxf-pM-jMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-470" y="-1095"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_icon_sports_normal" width="28" height="21"/>
+        <image name="tab_icon_sports_select" width="28" height="21"/>
+    </resources>
+</document>

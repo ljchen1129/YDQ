@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  YueDongQuan
+//
+//  Created by 陈良静 on 2017/3/7.
+//  Copyright © 2017年 陈良静. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+CLJExtension.h"
+#import "UIBarButtonItem+CLJExtension.h"
+
+#ifdef DEBUG
+#define CLJLog(...) NSLog(__VA_ARGS__)
+#else
+#define CLJLog(...)
+#endif
+
+/// 打印函数方法信息
+#define CLJLogFunc CLJLog(@"%s",__func__)
+
+/// 颜色
+#define CLJRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+
+/// tabBar tintColor
+#define CLJTabBarTintColor CLJRGBColor(42,190,43)
+
+#endif /* PrefixHeader_pch */

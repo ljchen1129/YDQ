@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D37EF831E6ECF8E00BD4702 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF821E6ECF8E00BD4702 /* MainTabBarVC.m */; };
+		5D37EF861E6ED28800BD4702 /* SportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF851E6ED28800BD4702 /* SportsViewController.m */; };
+		5D37EF891E6ED7EC00BD4702 /* Sports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF871E6ED7EC00BD4702 /* Sports.storyboard */; };
+		5D37EF8C1E6ED85A00BD4702 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF8A1E6ED85A00BD4702 /* Challenge.storyboard */; };
+		5D37EF8F1E6ED88700BD4702 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF8D1E6ED88700BD4702 /* Explore.storyboard */; };
+		5D37EF911E6ED8A300BD4702 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF901E6ED8A300BD4702 /* Social.storyboard */; };
+		5D37EF941E6ED8C100BD4702 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF921E6ED8C100BD4702 /* Profile.storyboard */; };
+		5D37EF9B1E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF981E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m */; };
+		5D37EF9C1E6EE02900BD4702 /* UIView+CLJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF9A1E6EE02900BD4702 /* UIView+CLJExtension.m */; };
+		5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */; };
 		5DE993091E6EA0A7003C3B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE993081E6EA0A7003C3B14 /* main.m */; };
 		5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9930B1E6EA0A7003C3B14 /* AppDelegate.m */; };
-		5DE9930F1E6EA0A7003C3B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9930E1E6EA0A7003C3B14 /* ViewController.m */; };
 		5DE993121E6EA0A7003C3B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE993101E6EA0A7003C3B14 /* Main.storyboard */; };
 		5DE993141E6EA0A7003C3B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE993131E6EA0A7003C3B14 /* Assets.xcassets */; };
 		5DE993171E6EA0A7003C3B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE993151E6EA0A7003C3B14 /* LaunchScreen.storyboard */; };
@@ -35,12 +44,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D37EF811E6ECF8E00BD4702 /* MainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
+		5D37EF821E6ECF8E00BD4702 /* MainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
+		5D37EF841E6ED28800BD4702 /* SportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsViewController.h; sourceTree = "<group>"; };
+		5D37EF851E6ED28800BD4702 /* SportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsViewController.m; sourceTree = "<group>"; };
+		5D37EF881E6ED7EC00BD4702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YueDongQuan/Base.lproj/Sports.storyboard; sourceTree = SOURCE_ROOT; };
+		5D37EF8B1E6ED85A00BD4702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YueDongQuan/Base.lproj/Challenge.storyboard; sourceTree = SOURCE_ROOT; };
+		5D37EF8E1E6ED88700BD4702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YueDongQuan/Base.lproj/Explore.storyboard; sourceTree = SOURCE_ROOT; };
+		5D37EF901E6ED8A300BD4702 /* Social.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Social.storyboard; path = ../../Main/Controller/Social.storyboard; sourceTree = "<group>"; };
+		5D37EF931E6ED8C100BD4702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YueDongQuan/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		5D37EF951E6EDDF300BD4702 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5D37EF971E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CLJExtension.h"; sourceTree = "<group>"; };
+		5D37EF981E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CLJExtension.m"; sourceTree = "<group>"; };
+		5D37EF991E6EE02900BD4702 /* UIView+CLJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLJExtension.h"; sourceTree = "<group>"; };
+		5D37EF9A1E6EE02900BD4702 /* UIView+CLJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLJExtension.m"; sourceTree = "<group>"; };
+		5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		5DE993041E6EA0A7003C3B14 /* YueDongQuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueDongQuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE993081E6EA0A7003C3B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DE9930A1E6EA0A7003C3B14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DE9930B1E6EA0A7003C3B14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5DE9930D1E6EA0A7003C3B14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5DE9930E1E6EA0A7003C3B14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5DE993111E6EA0A7003C3B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DE993131E6EA0A7003C3B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DE993161E6EA0A7003C3B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +100,275 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D37EF621E6ECE6100BD4702 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF6D1E6ECE6100BD4702 /* Main */,
+				5D37EF7C1E6ECE6100BD4702 /* Sports */,
+				5D37EF631E6ECE6100BD4702 /* Challenge */,
+				5D37EF681E6ECE6100BD4702 /* Explore */,
+				5D37EF771E6ECE6100BD4702 /* Social */,
+				5D37EF721E6ECE6100BD4702 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5D37EF631E6ECE6100BD4702 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF641E6ECE6100BD4702 /* Controller */,
+				5D37EF651E6ECE6100BD4702 /* Model */,
+				5D37EF661E6ECE6100BD4702 /* View */,
+				5D37EF671E6ECE6100BD4702 /* ViewModel */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		5D37EF641E6ECE6100BD4702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF8A1E6ED85A00BD4702 /* Challenge.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF651E6ECE6100BD4702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D37EF661E6ECE6100BD4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37EF671E6ECE6100BD4702 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D37EF681E6ECE6100BD4702 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF691E6ECE6100BD4702 /* Controller */,
+				5D37EF6A1E6ECE6100BD4702 /* Model */,
+				5D37EF6B1E6ECE6100BD4702 /* View */,
+				5D37EF6C1E6ECE6100BD4702 /* ViewModel */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		5D37EF691E6ECE6100BD4702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF8D1E6ED88700BD4702 /* Explore.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF6A1E6ECE6100BD4702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D37EF6B1E6ECE6100BD4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37EF6C1E6ECE6100BD4702 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D37EF6D1E6ECE6100BD4702 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF961E6EE02900BD4702 /* Categroy */,
+				5D37EF6E1E6ECE6100BD4702 /* Controller */,
+				5D37EF6F1E6ECE6100BD4702 /* Model */,
+				5D37EF701E6ECE6100BD4702 /* View */,
+				5D37EF711E6ECE6100BD4702 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5D37EF6E1E6ECE6100BD4702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DE993101E6EA0A7003C3B14 /* Main.storyboard */,
+				5D37EF811E6ECF8E00BD4702 /* MainTabBarVC.h */,
+				5D37EF821E6ECF8E00BD4702 /* MainTabBarVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF6F1E6ECE6100BD4702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D37EF701E6ECE6100BD4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37EF711E6ECE6100BD4702 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D37EF721E6ECE6100BD4702 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF731E6ECE6100BD4702 /* Controller */,
+				5D37EF741E6ECE6100BD4702 /* Model */,
+				5D37EF751E6ECE6100BD4702 /* View */,
+				5D37EF761E6ECE6100BD4702 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5D37EF731E6ECE6100BD4702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF921E6ED8C100BD4702 /* Profile.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF741E6ECE6100BD4702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D37EF751E6ECE6100BD4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37EF761E6ECE6100BD4702 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D37EF771E6ECE6100BD4702 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF781E6ECE6100BD4702 /* Controller */,
+				5D37EF791E6ECE6100BD4702 /* Model */,
+				5D37EF7A1E6ECE6100BD4702 /* View */,
+				5D37EF7B1E6ECE6100BD4702 /* ViewModel */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		5D37EF781E6ECE6100BD4702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF901E6ED8A300BD4702 /* Social.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF791E6ECE6100BD4702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D37EF7A1E6ECE6100BD4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37EF7B1E6ECE6100BD4702 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D37EF7C1E6ECE6100BD4702 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF7D1E6ECE6100BD4702 /* Controller */,
+				5D37EF7E1E6ECE6100BD4702 /* Model */,
+				5D37EF7F1E6ECE6100BD4702 /* View */,
+				5D37EF801E6ECE6100BD4702 /* ViewModel */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		5D37EF7D1E6ECE6100BD4702 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF871E6ED7EC00BD4702 /* Sports.storyboard */,
+				5D37EF841E6ED28800BD4702 /* SportsViewController.h */,
+				5D37EF851E6ED28800BD4702 /* SportsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF7E1E6ECE6100BD4702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D37EF7F1E6ECE6100BD4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37EF801E6ECE6100BD4702 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D37EF961E6EE02900BD4702 /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				5D37EF971E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.h */,
+				5D37EF981E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m */,
+				5D37EF991E6EE02900BD4702 /* UIView+CLJExtension.h */,
+				5D37EF9A1E6EE02900BD4702 /* UIView+CLJExtension.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
 		5DE992FB1E6EA0A7003C3B14 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +394,7 @@
 			children = (
 				5DE9930A1E6EA0A7003C3B14 /* AppDelegate.h */,
 				5DE9930B1E6EA0A7003C3B14 /* AppDelegate.m */,
-				5DE9930D1E6EA0A7003C3B14 /* ViewController.h */,
-				5DE9930E1E6EA0A7003C3B14 /* ViewController.m */,
-				5DE993101E6EA0A7003C3B14 /* Main.storyboard */,
-				5DE993131E6EA0A7003C3B14 /* Assets.xcassets */,
-				5DE993151E6EA0A7003C3B14 /* LaunchScreen.storyboard */,
-				5DE993181E6EA0A7003C3B14 /* Info.plist */,
+				5D37EF621E6ECE6100BD4702 /* Classes */,
 				5DE993071E6EA0A7003C3B14 /* Supporting Files */,
 			);
 			path = YueDongQuan;
@@ -117,7 +403,12 @@
 		5DE993071E6EA0A7003C3B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */,
+				5DE993131E6EA0A7003C3B14 /* Assets.xcassets */,
+				5DE993151E6EA0A7003C3B14 /* LaunchScreen.storyboard */,
+				5DE993181E6EA0A7003C3B14 /* Info.plist */,
 				5DE993081E6EA0A7003C3B14 /* main.m */,
+				5D37EF951E6EDDF300BD4702 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -246,8 +537,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D37EF8C1E6ED85A00BD4702 /* Challenge.storyboard in Resources */,
 				5DE993171E6EA0A7003C3B14 /* LaunchScreen.storyboard in Resources */,
+				5D37EF891E6ED7EC00BD4702 /* Sports.storyboard in Resources */,
+				5D37EF911E6ED8A300BD4702 /* Social.storyboard in Resources */,
+				5D37EF8F1E6ED88700BD4702 /* Explore.storyboard in Resources */,
 				5DE993141E6EA0A7003C3B14 /* Assets.xcassets in Resources */,
+				5D37EF941E6ED8C100BD4702 /* Profile.storyboard in Resources */,
 				5DE993121E6EA0A7003C3B14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +569,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE9930F1E6EA0A7003C3B14 /* ViewController.m in Sources */,
 				5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */,
+				5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */,
 				5DE993091E6EA0A7003C3B14 /* main.m in Sources */,
+				5D37EF9C1E6EE02900BD4702 /* UIView+CLJExtension.m in Sources */,
+				5D37EF831E6ECF8E00BD4702 /* MainTabBarVC.m in Sources */,
+				5D37EF861E6ED28800BD4702 /* SportsViewController.m in Sources */,
+				5D37EF9B1E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,12 +611,49 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5D37EF871E6ED7EC00BD4702 /* Sports.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D37EF881E6ED7EC00BD4702 /* Base */,
+			);
+			name = Sports.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF8A1E6ED85A00BD4702 /* Challenge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D37EF8B1E6ED85A00BD4702 /* Base */,
+			);
+			name = Challenge.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF8D1E6ED88700BD4702 /* Explore.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D37EF8E1E6ED88700BD4702 /* Base */,
+			);
+			name = Explore.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+		5D37EF921E6ED8C100BD4702 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D37EF931E6ED8C100BD4702 /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
 		5DE993101E6EA0A7003C3B14 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5DE993111E6EA0A7003C3B14 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		5DE993151E6EA0A7003C3B14 /* LaunchScreen.storyboard */ = {
@@ -425,10 +762,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = YueDongQuan/PrefixHeader.pch;
 				INFOPLIST_FILE = YueDongQuan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = clj.YueDongQuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -437,10 +777,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = YueDongQuan/PrefixHeader.pch;
 				INFOPLIST_FILE = YueDongQuan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = clj.YueDongQuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

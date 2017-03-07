@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 
+    [UITabBar appearance].tintColor = CLJTabBarTintColor;
+    
     return YES;
 }
 

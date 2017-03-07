@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Fc-7j-THU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2hf-Tc-usL">
+            <objects>
+                <viewController id="VhB-Yc-WXk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wcc-un-11O"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZMh-kJ-cMN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hB9-NK-jHu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wc9-qe-jcV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atD-ag-uq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="-366"/>
+        </scene>
+        <!--挑战-->
+        <scene sceneID="S5L-FT-AZ9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Fc-7j-THU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="挑战" image="tab_icon_challenge_normal" selectedImage="tab_icon_challenge_select" id="2Mh-oA-STo"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lnS-KO-O2I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VhB-Yc-WXk" kind="relationship" relationship="rootViewController" id="phd-fb-ea3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jl4-N0-IEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="-388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_icon_challenge_normal" width="25" height="21"/>
+        <image name="tab_icon_challenge_select" width="25" height="21"/>
+    </resources>
+</document>

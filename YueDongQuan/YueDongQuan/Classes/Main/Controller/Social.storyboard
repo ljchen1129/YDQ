@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EWl-sr-bd8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UWC-rK-33g">
+            <objects>
+                <viewController id="gEd-km-MAC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9E-fF-oJz"/>
+                        <viewControllerLayoutGuide type="bottom" id="yPS-ah-DDO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V1i-N5-zeo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nSh-dX-jcu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qag-to-YEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="-306"/>
+        </scene>
+        <!--圈子-->
+        <scene sceneID="Yz1-gC-cRw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWl-sr-bd8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="圈子" image="tab_icon_social_normal" selectedImage="tab_icon_social_select" id="AIS-mj-7op"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dCp-qc-b8l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gEd-km-MAC" kind="relationship" relationship="rootViewController" id="XRO-1d-cPf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAt-7x-XRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_icon_social_normal" width="24" height="23"/>
+        <image name="tab_icon_social_select" width="24" height="23"/>
+    </resources>
+</document>
