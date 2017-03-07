@@ -4,14 +4,15 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Explore View Controller-->
         <scene sceneID="xX4-YK-Q6h">
             <objects>
-                <viewController id="ZDM-Bd-MSc" sceneMemberID="viewController">
+                <viewController id="ZDM-Bd-MSc" customClass="ExploreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wlh-BH-Kcf"/>
                         <viewControllerLayoutGuide type="bottom" id="uSz-ZZ-fHc"/>

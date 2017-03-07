@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // 
+    // 修改TabBar的全局颜色
     [UITabBar appearance].tintColor = CLJTabBarTintColor;
     
     return YES;

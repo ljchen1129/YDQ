@@ -24,6 +24,10 @@
 		5DE993171E6EA0A7003C3B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE993151E6EA0A7003C3B14 /* LaunchScreen.storyboard */; };
 		5DE993221E6EA0A7003C3B14 /* YueDongQuanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE993211E6EA0A7003C3B14 /* YueDongQuanTests.m */; };
 		5DE9932D1E6EA0A7003C3B14 /* YueDongQuanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9932C1E6EA0A7003C3B14 /* YueDongQuanUITests.m */; };
+		5DFF94691E6EF963003D3026 /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF94681E6EF963003D3026 /* ChallengeViewController.m */; };
+		5DFF946C1E6EF98B003D3026 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF946B1E6EF98B003D3026 /* ExploreViewController.m */; };
+		5DFF946F1E6EF9A8003D3026 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF946E1E6EF9A8003D3026 /* SocialViewController.m */; };
+		5DFF94721E6EF9DB003D3026 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF94711E6EF9DB003D3026 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,14 @@
 		5DE993281E6EA0A7003C3B14 /* YueDongQuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YueDongQuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE9932C1E6EA0A7003C3B14 /* YueDongQuanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YueDongQuanUITests.m; sourceTree = "<group>"; };
 		5DE9932E1E6EA0A7003C3B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DFF94671E6EF963003D3026 /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeViewController.h; sourceTree = "<group>"; };
+		5DFF94681E6EF963003D3026 /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
+		5DFF946A1E6EF98B003D3026 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		5DFF946B1E6EF98B003D3026 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
+		5DFF946D1E6EF9A8003D3026 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		5DFF946E1E6EF9A8003D3026 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		5DFF94701E6EF9DB003D3026 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		5DFF94711E6EF9DB003D3026 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				5D37EF8A1E6ED85A00BD4702 /* Challenge.storyboard */,
+				5DFF94671E6EF963003D3026 /* ChallengeViewController.h */,
+				5DFF94681E6EF963003D3026 /* ChallengeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				5D37EF8D1E6ED88700BD4702 /* Explore.storyboard */,
+				5DFF946A1E6EF98B003D3026 /* ExploreViewController.h */,
+				5DFF946B1E6EF98B003D3026 /* ExploreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				5D37EF921E6ED8C100BD4702 /* Profile.storyboard */,
+				5DFF94701E6EF9DB003D3026 /* ProfileViewController.h */,
+				5DFF94711E6EF9DB003D3026 /* ProfileViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				5D37EF901E6ED8A300BD4702 /* Social.storyboard */,
+				5DFF946D1E6EF9A8003D3026 /* SocialViewController.h */,
+				5DFF946E1E6EF9A8003D3026 /* SocialViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,8 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				5D37EF7D1E6ECE6100BD4702 /* Controller */,
-				5D37EF7E1E6ECE6100BD4702 /* Model */,
 				5D37EF7F1E6ECE6100BD4702 /* View */,
+				5D37EF7E1E6ECE6100BD4702 /* Model */,
 				5D37EF801E6ECE6100BD4702 /* ViewModel */,
 			);
 			path = Sports;
@@ -575,6 +595,10 @@
 				5D37EF9C1E6EE02900BD4702 /* UIView+CLJExtension.m in Sources */,
 				5D37EF831E6ECF8E00BD4702 /* MainTabBarVC.m in Sources */,
 				5D37EF861E6ED28800BD4702 /* SportsViewController.m in Sources */,
+				5DFF94691E6EF963003D3026 /* ChallengeViewController.m in Sources */,
+				5DFF946F1E6EF9A8003D3026 /* SocialViewController.m in Sources */,
+				5DFF94721E6EF9DB003D3026 /* ProfileViewController.m in Sources */,
+				5DFF946C1E6EF98B003D3026 /* ExploreViewController.m in Sources */,
 				5D37EF9B1E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,7 +788,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = YueDongQuan/PrefixHeader.pch;
 				INFOPLIST_FILE = YueDongQuan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = clj.YueDongQuan.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,7 +803,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = YueDongQuan/PrefixHeader.pch;
 				INFOPLIST_FILE = YueDongQuan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = clj.YueDongQuan.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
