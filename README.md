@@ -1,6 +1,16 @@
 # YDQ
 仿[悦动圈](https://itunes.apple.com/cn/app/%E6%82%A6%E5%8A%A8%E5%9C%88-%E8%B7%91%E6%AD%A5%E8%AE%A1%E6%AD%A5%E5%87%8F%E8%82%A5100-%E9%A2%86%E7%BA%A2%E5%8C%85%E7%9A%84%E8%BF%90%E5%8A%A8%E5%81%A5%E5%BA%B7%E7%A4%BE%E5%8C%BA/id872341407?mt=8)运动APP
 
+# 索引
+- [第一天](#第一天)
+	- [获取图片资源](#获取图片资源)
+	- [新建工程，基础配置](#新建工程，基础配置)
+	- [接口 API 获取](#接口API获取)
+	- [搭建框架](#搭建框架)
+- [第二天](#第二天)
+
+
+
 # 第一天
 ## 获取图片资源
 
@@ -18,11 +28,11 @@
 
 新建一个工程项目，配置应用名称、BundleId、部署版本、横竖屏等这些信息，再将图片资源导入，配置下 AppIcon，启动图
 
-## 接口 API 获取
+## 接口API获取
 
-使用 [Chales](https://www.charlesproxy.com/) 工具，配置一下，https 请求需要在手机端安装 SSL 证书，获取到每个页面的 API，做好对应的整理，主要有请求方式，请求参数，请求地址的获取。
+使用 [Charles](https://www.charlesproxy.com/) 工具，配置一下，https 请求需要在手机端安装 SSL 证书，获取到每个页面的 API，做好对应的整理，主要有请求方式，请求参数，请求地址的获取。
 
-> 关于 [Chales](https://www.charlesproxy.com/) 如何使用的相关介绍可以参照唐老师写的这篇[博客](http://blog.devtang.com/2015/11/14/charles-introduction/)
+> 关于 [Charles](https://www.charlesproxy.com/) 如何使用的相关介绍可以参照唐老师写的这篇[博客](http://blog.devtang.com/2015/11/14/charles-introduction/)
 
 ## 搭建框架
 
@@ -44,7 +54,7 @@
 }
 ```
 
-将各个自控制器添加到 TabBarController 上去：
+将各个子控制器添加到 TabBarController 上去：
 
 ```Objective-C
 - (void)viewDidLoad {
@@ -66,3 +76,5 @@
     [self addChildViewController:vc];
 }
 ```
+
+# 第二天
