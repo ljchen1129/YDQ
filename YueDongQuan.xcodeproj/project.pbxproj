@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1099FD1E6FC87A00981736 /* SportsContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1099FC1E6FC87A00981736 /* SportsContainerView.m */; };
+		5D109A001E6FD88200981736 /* SportsTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1099FF1E6FD88200981736 /* SportsTopViewController.m */; };
+		5D109A031E6FD89100981736 /* SportsBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A021E6FD89100981736 /* SportsBottomViewController.m */; };
+		5D109A061E6FD9C500981736 /* MainPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A051E6FD9C500981736 /* MainPageTitleView.m */; };
+		5D109A091E6FF70500981736 /* MainPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D109A081E6FF70500981736 /* MainPageContentView.m */; };
 		5D37EF831E6ECF8E00BD4702 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF821E6ECF8E00BD4702 /* MainTabBarVC.m */; };
 		5D37EF861E6ED28800BD4702 /* SportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF851E6ED28800BD4702 /* SportsViewController.m */; };
 		5D37EF891E6ED7EC00BD4702 /* Sports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF871E6ED7EC00BD4702 /* Sports.storyboard */; };
@@ -48,6 +53,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1099FB1E6FC87A00981736 /* SportsContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsContainerView.h; sourceTree = "<group>"; };
+		5D1099FC1E6FC87A00981736 /* SportsContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsContainerView.m; sourceTree = "<group>"; };
+		5D1099FE1E6FD88200981736 /* SportsTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsTopViewController.h; sourceTree = "<group>"; };
+		5D1099FF1E6FD88200981736 /* SportsTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsTopViewController.m; sourceTree = "<group>"; };
+		5D109A011E6FD89100981736 /* SportsBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsBottomViewController.h; sourceTree = "<group>"; };
+		5D109A021E6FD89100981736 /* SportsBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsBottomViewController.m; sourceTree = "<group>"; };
+		5D109A041E6FD9C500981736 /* MainPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainPageTitleView.h; path = ../../Sports/View/MainPageTitleView.h; sourceTree = "<group>"; };
+		5D109A051E6FD9C500981736 /* MainPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageTitleView.m; path = ../../Sports/View/MainPageTitleView.m; sourceTree = "<group>"; };
+		5D109A071E6FF70500981736 /* MainPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainPageContentView.h; path = ../../Sports/View/MainPageContentView.h; sourceTree = "<group>"; };
+		5D109A081E6FF70500981736 /* MainPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageContentView.m; path = ../../Sports/View/MainPageContentView.m; sourceTree = "<group>"; };
 		5D37EF811E6ECF8E00BD4702 /* MainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
 		5D37EF821E6ECF8E00BD4702 /* MainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
 		5D37EF841E6ED28800BD4702 /* SportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsViewController.h; sourceTree = "<group>"; };
@@ -241,6 +256,10 @@
 		5D37EF701E6ECE6100BD4702 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5D109A041E6FD9C500981736 /* MainPageTitleView.h */,
+				5D109A051E6FD9C500981736 /* MainPageTitleView.m */,
+				5D109A071E6FF70500981736 /* MainPageContentView.h */,
+				5D109A081E6FF70500981736 /* MainPageContentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +372,10 @@
 				5D37EF871E6ED7EC00BD4702 /* Sports.storyboard */,
 				5D37EF841E6ED28800BD4702 /* SportsViewController.h */,
 				5D37EF851E6ED28800BD4702 /* SportsViewController.m */,
+				5D1099FE1E6FD88200981736 /* SportsTopViewController.h */,
+				5D1099FF1E6FD88200981736 /* SportsTopViewController.m */,
+				5D109A011E6FD89100981736 /* SportsBottomViewController.h */,
+				5D109A021E6FD89100981736 /* SportsBottomViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +390,8 @@
 		5D37EF7F1E6ECE6100BD4702 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5D1099FB1E6FC87A00981736 /* SportsContainerView.h */,
+				5D1099FC1E6FC87A00981736 /* SportsContainerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,14 +616,19 @@
 			files = (
 				5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */,
 				5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */,
+				5D109A061E6FD9C500981736 /* MainPageTitleView.m in Sources */,
 				5DE993091E6EA0A7003C3B14 /* main.m in Sources */,
 				5D37EF9C1E6EE02900BD4702 /* UIView+CLJExtension.m in Sources */,
+				5D109A091E6FF70500981736 /* MainPageContentView.m in Sources */,
+				5D1099FD1E6FC87A00981736 /* SportsContainerView.m in Sources */,
 				5D37EF831E6ECF8E00BD4702 /* MainTabBarVC.m in Sources */,
 				5D37EF861E6ED28800BD4702 /* SportsViewController.m in Sources */,
 				5DFF94691E6EF963003D3026 /* ChallengeViewController.m in Sources */,
 				5DFF946F1E6EF9A8003D3026 /* SocialViewController.m in Sources */,
 				5DFF94721E6EF9DB003D3026 /* ProfileViewController.m in Sources */,
+				5D109A031E6FD89100981736 /* SportsBottomViewController.m in Sources */,
 				5DFF946C1E6EF98B003D3026 /* ExploreViewController.m in Sources */,
+				5D109A001E6FD88200981736 /* SportsTopViewController.m in Sources */,
 				5D37EF9B1E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

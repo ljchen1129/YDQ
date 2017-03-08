@@ -10,11 +10,11 @@
 
 @interface UIView (CLJExtension)
 
-@property(nonatomic, assign) CGFloat width;
-@property(nonatomic, assign) CGFloat height;
-@property(nonatomic, assign) CGFloat x;
-@property(nonatomic, assign) CGFloat y;
-@property(nonatomic, assign) CGSize size;
+@property(nonatomic, assign) CGFloat clj_width;
+@property(nonatomic, assign) CGFloat clj_height;
+@property(nonatomic, assign) CGFloat clj_x;
+@property(nonatomic, assign) CGFloat clj_y;
+@property(nonatomic, assign) CGSize clj_size;
 
 /*
  注意：在分类里面写@property属性，只会生成方法的声明，而不会生成方法的实现以及成员变量

@@ -10,62 +10,62 @@
 
 @implementation UIView (CLJExtension)
 
-- (void)setWidth:(CGFloat)width
+- (void)setClj_width:(CGFloat)clj_width
 {
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = clj_width;
     self.frame = frame;
 }
 
-- (void)setHeight:(CGFloat)height
+- (void)setClj_height:(CGFloat)clj_height
 {
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = clj_height;
     self.frame = frame;
 }
 
-- (void)setX:(CGFloat)x
+- (void)setClj_x:(CGFloat)clj_x
 {
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = clj_x;
     self.frame = frame;
 }
 
-- (void)setY:(CGFloat)y
+- (void)setClj_y:(CGFloat)clj_y
 {
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = clj_y;
     self.frame = frame;
 }
 
-- (void)setSize:(CGSize)size
+- (void)setClj_size:(CGSize)clj_size
 {
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = clj_size;
     self.frame = frame;
 }
 
-- (CGFloat)width
+- (CGFloat)clj_width
 {
     return self.frame.size.width;
 }
 
-- (CGFloat)height
+- (CGFloat)clj_height
 {
     return self.frame.size.height;
 }
 
-- (CGFloat)x
+- (CGFloat)clj_x
 {
     return self.frame.origin.x;
 }
 
-- (CGFloat)y
+- (CGFloat)clj_y
 {
     return self.frame.origin.y;
 }
 
-- (CGSize)size
+- (CGSize)clj_size
 {
     return self.frame.size;
 }
