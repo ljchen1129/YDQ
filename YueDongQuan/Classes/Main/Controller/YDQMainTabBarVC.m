@@ -6,13 +6,13 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "MainTabBarVC.h"
+#import "YDQMainTabBarVC.h"
 
-@interface MainTabBarVC ()
+@interface YDQMainTabBarVC ()
 
 @end
 
-@implementation MainTabBarVC
+@implementation YDQMainTabBarVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -12,7 +12,7 @@
         <!--Social View Controller-->
         <scene sceneID="UWC-rK-33g">
             <objects>
-                <viewController id="gEd-km-MAC" customClass="SocialViewController" sceneMemberID="viewController">
+                <viewController id="gEd-km-MAC" customClass="YDQSocialViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O9E-fF-oJz"/>
                         <viewControllerLayoutGuide type="bottom" id="yPS-ah-DDO"/>

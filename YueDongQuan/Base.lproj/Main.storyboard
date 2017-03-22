@@ -12,7 +12,7 @@
         <!--Main Tab BarVC-->
         <scene sceneID="rEN-Us-U1U">
             <objects>
-                <tabBarController id="k10-fX-vb2" customClass="MainTabBarVC" sceneMemberID="viewController">
+                <tabBarController id="k10-fX-vb2" customClass="YDQMainTabBarVC" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="N9n-WT-GOK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -6,26 +6,26 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "SportsTopViewController.h"
-#import "MainPageTitleView.h"
-#import "MainPageContentView.h"
+#import "YDQSportsTopViewController.h"
+#import "YDQMainPageTitleView.h"
+#import "YDQMainPageContentView.h"
 
 static CGFloat const kTitleViewX = 50.0;
 static CGFloat const kTitleViewY = 100.0;
 static CGFloat const kTitleViewH = 35.0;
 static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 
-@interface SportsTopViewController () <PageTitleViewDelegate, PageContentViewDelegate>
+@interface YDQSportsTopViewController () <PageTitleViewDelegate, PageContentViewDelegate>
 
 ///topTitleView
-@property(nonatomic, strong) MainPageTitleView *titleView;
+@property(nonatomic, strong) YDQMainPageTitleView *titleView;
 
 /// contentView
-@property(nonatomic, strong) MainPageContentView *contentView;
+@property(nonatomic, strong) YDQMainPageContentView *contentView;
 
 @end
 
-@implementation SportsTopViewController
+@implementation YDQSportsTopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -64,7 +64,7 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 
 #pragma mark - setter
 
-- (MainPageContentView *)contentView
+- (YDQMainPageContentView *)contentView
 {
     if (!_contentView)
     {
@@ -78,24 +78,24 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
             label.text = [NSString stringWithFormat:@"第%d页", i];
             [label sizeToFit];
             [childVc.view addSubview:label];
-            childVc.view.backgroundColor = CLJRandomColor;
+            childVc.view.backgroundColor = YDQRandomColor;
             [tempArray addObject:childVc];
         }
         
-        CGRect frame = CGRectMake(0, kContentViewY, CLJScreenWidth, CLJScreenHeight - kContentViewY);
-        _contentView = [[MainPageContentView alloc] initWithFrame:frame controllers:tempArray parnentVc:self];
+        CGRect frame = CGRectMake(0, kContentViewY, YDQScreenWidth, YDQScreenHeight - kContentViewY);
+        _contentView = [[YDQMainPageContentView alloc] initWithFrame:frame controllers:tempArray parnentVc:self];
         _contentView.delegate = self;
     }
     
     return _contentView;
 }
 
-- (MainPageTitleView *)titleView
+- (YDQMainPageTitleView *)titleView
 {
     if (!_titleView)
     {
         CGRect frame = CGRectMake(kTitleViewX, kTitleViewY, self.view.clj_width - 2 * kTitleViewX, kTitleViewH);
-        _titleView = [[MainPageTitleView alloc] initWithFrame:frame titles:@[@"计步", @"跑步", @"健身", @"骑行"]];
+        _titleView = [[YDQMainPageTitleView alloc] initWithFrame:frame titles:@[@"计步", @"跑步", @"健身", @"骑行"]];
         _titleView.delegate = self;
     }
     

@@ -12,7 +12,7 @@
         <!--Challenge View Controller-->
         <scene sceneID="2hf-Tc-usL">
             <objects>
-                <viewController id="VhB-Yc-WXk" customClass="ChallengeViewController" sceneMemberID="viewController">
+                <viewController id="VhB-Yc-WXk" customClass="YDQChallengeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wcc-un-11O"/>
                         <viewControllerLayoutGuide type="bottom" id="ZMh-kJ-cMN"/>

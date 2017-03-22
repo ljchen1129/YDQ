@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SportsContainerView : UIView
+@interface YDQSportsContainerView : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame controllers:(NSArray <UIViewController *>*)childVcs parnentVc:(UIViewController *)parnentVc;
 

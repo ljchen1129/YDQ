@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SportsViewController : UIViewController
+@interface YDQSportsViewController : UIViewController
 
 @end

@@ -7,13 +7,13 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "SportsBottomViewController.h"
+#import "YDQSportsBottomViewController.h"
 
-@interface SportsBottomViewController ()
+@interface YDQSportsBottomViewController ()
 
 @end
 
-@implementation SportsBottomViewController
+@implementation YDQSportsBottomViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

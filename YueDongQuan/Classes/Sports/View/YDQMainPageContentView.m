@@ -6,11 +6,11 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "MainPageContentView.h"
+#import "YDQMainPageContentView.h"
 
 static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdentifier";
 
-@interface MainPageContentView () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface YDQMainPageContentView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 /// 子控制器数组
 @property(nonatomic, strong)NSArray *childVcs;
@@ -29,7 +29,7 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
 
 @end
 
-@implementation MainPageContentView
+@implementation YDQMainPageContentView
 
 - (instancetype)initWithFrame:(CGRect)frame controllers:(NSArray <UIViewController *>*)childVcs parnentVc:(UIViewController *)parnentVc
 {

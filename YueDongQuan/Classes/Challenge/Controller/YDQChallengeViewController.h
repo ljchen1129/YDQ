@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChallengeViewController : UIViewController
+@interface YDQChallengeViewController : UIViewController
 
 @end

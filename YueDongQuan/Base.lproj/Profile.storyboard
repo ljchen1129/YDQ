@@ -12,7 +12,7 @@
         <!--Profile View Controller-->
         <scene sceneID="GYx-9e-R7T">
             <objects>
-                <viewController id="mMe-JT-YkD" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController id="mMe-JT-YkD" customClass="YDQProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="js2-uL-SMz"/>
                         <viewControllerLayoutGuide type="bottom" id="0L3-bV-F8m"/>

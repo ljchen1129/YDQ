@@ -14,7 +14,7 @@
 
 @end
 
-@interface MainPageTitleView : UIView
+@interface YDQMainPageTitleView : UIView
 
 /// 代理
 @property(nonatomic, weak) id<PageTitleViewDelegate> delegate;

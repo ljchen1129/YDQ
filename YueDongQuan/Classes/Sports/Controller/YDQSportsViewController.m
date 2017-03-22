@@ -6,25 +6,25 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "SportsViewController.h"
-#import "SportsContainerView.h"
-#import "SportsTopViewController.h"
-#import "SportsBottomViewController.h"
+#import "YDQSportsViewController.h"
+#import "YDQSportsContainerView.h"
+#import "YDQSportsTopViewController.h"
+#import "YDQSportsBottomViewController.h"
 
-@interface SportsViewController () <UINavigationControllerDelegate>
+@interface YDQSportsViewController () <UINavigationControllerDelegate>
 
 /// contentView
-@property(nonatomic, strong) SportsContainerView *contentView;
+@property(nonatomic, strong) YDQSportsContainerView *contentView;
 
 @end
 
-@implementation SportsViewController
+@implementation YDQSportsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationController.delegate = self;
-//    self.view.backgroundColor = CLJRandomColor;
+//    self.view.backgroundColor = YDQRandomColor;
     // 1.不要调整UIScrollView的内边距，不然系统会自动将scrollView的y坐标加64
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.contentView];
@@ -39,18 +39,18 @@
 
 #pragma mark - setter
 
-- (SportsContainerView *)contentView
+- (YDQSportsContainerView *)contentView
 {
     if (!_contentView)
     {
         NSMutableArray *tempArray = [NSMutableArray array];
-        SportsTopViewController *topVc = [[SportsTopViewController alloc] init];
+        YDQSportsTopViewController *topVc = [[YDQSportsTopViewController alloc] init];
         [tempArray addObject:topVc];
-        topVc.view.backgroundColor = CLJRandomColor;
-        SportsBottomViewController *bottomVc = [[SportsBottomViewController alloc] init];
+        topVc.view.backgroundColor = YDQRandomColor;
+        YDQSportsBottomViewController *bottomVc = [[YDQSportsBottomViewController alloc] init];
         [tempArray addObject:bottomVc];
         
-        _contentView = [[SportsContainerView alloc] initWithFrame:self.view.bounds controllers:tempArray parnentVc:self];
+        _contentView = [[YDQSportsContainerView alloc] initWithFrame:self.view.bounds controllers:tempArray parnentVc:self];
     }
     
     return _contentView;

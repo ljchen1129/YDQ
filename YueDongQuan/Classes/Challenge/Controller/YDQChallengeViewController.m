@@ -6,18 +6,18 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "ChallengeViewController.h"
+#import "YDQChallengeViewController.h"
 
-@interface ChallengeViewController ()
+@interface YDQChallengeViewController ()
 
 @end
 
-@implementation ChallengeViewController
+@implementation YDQChallengeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = CLJRandomColor;
+    self.view.backgroundColor = YDQRandomColor;
 }
 
 @end

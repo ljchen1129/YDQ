@@ -12,7 +12,7 @@
         <!--Sports View Controller-->
         <scene sceneID="L0d-Z7-4nv">
             <objects>
-                <viewController id="RZj-h5-DzJ" customClass="SportsViewController" sceneMemberID="viewController">
+                <viewController id="RZj-h5-DzJ" customClass="YDQSportsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pt7-1R-8SX"/>
                         <viewControllerLayoutGuide type="bottom" id="4hT-iy-s2E"/>

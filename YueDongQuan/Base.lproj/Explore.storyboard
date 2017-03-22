@@ -12,7 +12,7 @@
         <!--Explore View Controller-->
         <scene sceneID="xX4-YK-Q6h">
             <objects>
-                <viewController id="ZDM-Bd-MSc" customClass="ExploreViewController" sceneMemberID="viewController">
+                <viewController id="ZDM-Bd-MSc" customClass="YDQExploreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wlh-BH-Kcf"/>
                         <viewControllerLayoutGuide type="bottom" id="uSz-ZZ-fHc"/>

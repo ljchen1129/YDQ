@@ -6,18 +6,18 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "ProfileViewController.h"
+#import "YDQProfileViewController.h"
 
-@interface ProfileViewController ()
+@interface YDQProfileViewController ()
 
 @end
 
-@implementation ProfileViewController
+@implementation YDQProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = CLJRandomColor;
+    self.view.backgroundColor = YDQRandomColor;
 }
 
 @end

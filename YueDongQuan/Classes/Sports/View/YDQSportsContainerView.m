@@ -6,11 +6,11 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "SportsContainerView.h"
+#import "YDQSportsContainerView.h"
 
 static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdentifier";
 
-@interface SportsContainerView () <UICollectionViewDataSource>
+@interface YDQSportsContainerView () <UICollectionViewDataSource>
 
 /// 子控制器数组
 @property(nonatomic, strong)NSArray *childVcs;
@@ -23,7 +23,7 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
 
 @end
 
-@implementation SportsContainerView
+@implementation YDQSportsContainerView
 
 - (instancetype)initWithFrame:(CGRect)frame controllers:(NSArray <UIViewController *>*)childVcs parnentVc:(UIViewController *)parnentVc
 {

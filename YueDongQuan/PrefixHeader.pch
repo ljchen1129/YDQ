@@ -13,25 +13,25 @@
 #import "UIBarButtonItem+CLJExtension.h"
 
 #ifdef DEBUG
-#define CLJLog(...) NSLog(__VA_ARGS__)
+#define YDQLog(...) NSLog(__VA_ARGS__)
 #else
-#define CLJLog(...)
+#define YDQLog(...)
 #endif
 
 /// 打印函数方法信息
-#define CLJLogFunc CLJLog(@"%s",__func__)
+#define YDQLogFunc YDQLog(@"%s",__func__)
 
 /// 颜色
-#define CLJRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+#define YDQRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
 
 /// tabBar tintColor
-#define CLJTabBarTintColor CLJRGBColor(42,190,43)
+#define YDQTabBarTintColor YDQRGBColor(42,190,43)
 
 /// 随机色
-#define CLJRandomColor CLJRGBColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+#define YDQRandomColor YDQRGBColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
 
 /// 屏幕尺寸
-#define CLJScreenWidth [UIScreen mainScreen].bounds.size.width
-#define CLJScreenHeight [UIScreen mainScreen].bounds.size.height
+#define YDQScreenWidth [UIScreen mainScreen].bounds.size.width
+#define YDQScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #endif /* PrefixHeader_pch */

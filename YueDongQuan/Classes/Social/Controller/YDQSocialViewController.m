@@ -6,18 +6,18 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "SocialViewController.h"
+#import "YDQSocialViewController.h"
 
-@interface SocialViewController ()
+@interface YDQSocialViewController ()
 
 @end
 
-@implementation SocialViewController
+@implementation YDQSocialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = CLJRandomColor;
+    self.view.backgroundColor = YDQRandomColor;
 }
 
 @end

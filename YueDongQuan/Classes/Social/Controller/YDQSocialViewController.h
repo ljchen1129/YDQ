@@ -1,5 +1,5 @@
 //
-//  ExploreViewController.h
+//  SocialViewController.h
 //  YueDongQuan
 //
 //  Created by 陈良静 on 2017/3/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExploreViewController : UIViewController
+@interface YDQSocialViewController : UIViewController
 
 @end

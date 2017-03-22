@@ -14,7 +14,7 @@
 
 @end
 
-@interface MainPageContentView : UIView
+@interface YDQMainPageContentView : UIView
 
 /// 代理
 @property(nonatomic, weak) id<PageContentViewDelegate> delegate;

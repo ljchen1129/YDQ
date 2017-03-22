@@ -6,18 +6,18 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import "ExploreViewController.h"
+#import "YDQExploreViewController.h"
 
-@interface ExploreViewController ()
+@interface YDQExploreViewController ()
 
 @end
 
-@implementation ExploreViewController
+@implementation YDQExploreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = CLJRandomColor;
+    self.view.backgroundColor = YDQRandomColor;
 }
 
 @end
