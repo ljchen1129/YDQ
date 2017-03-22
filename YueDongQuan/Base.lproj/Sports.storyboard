@@ -31,7 +31,7 @@
         <!--悦动-->
         <scene sceneID="o0t-Wd-mVk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qoq-5a-5ku" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qoq-5a-5ku" customClass="SYNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="悦动" image="tab_icon_sports_normal" selectedImage="tab_icon_sports_select" id="iyI-7X-EKb"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

@@ -9,6 +9,7 @@
 #import "YDQSportsContainerView.h"
 
 static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdentifier";
+static NSInteger const kConllectionItems = 2;
 
 @interface YDQSportsContainerView () <UICollectionViewDataSource>
 
@@ -43,7 +44,7 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
 
 - (void)setupUI
 {
-    // 1. 把自控制器添加到父控制器上
+    // 1. 把子控制器添加到父控制器上
     for (UIViewController *vc in self.childVcs)
     {
         [self.parnentVc addChildViewController:vc];
@@ -55,6 +56,39 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
     
     // 注册cell
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kCollectionViewCellIdentifier];
+}
+
+#pragma mark - publicMothed
+
+- (void)setCurrentIndex:(int)index
+{
+    CGFloat offY = index * self.collectionView.clj_height;
+    [self.collectionView setContentOffset:CGPointMake(0, offY) animated:YES];
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return kConllectionItems;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellIdentifier forIndexPath:indexPath];
+    
+    // 设置之前先把contentView上的子视图清除掉
+    for (UIView *view in cell.contentView.subviews)
+    {
+        [view removeFromSuperview];
+    }
+
+    // 设置cell的内容
+    UIViewController *childVc = self.childVcs[indexPath.item];
+    childVc.view.frame = cell.contentView.bounds;
+    [cell.contentView addSubview:childVc.view];
+    
+    return cell;
 }
 
 #pragma mark - setter
@@ -77,31 +111,6 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
     }
     
     return _collectionView;
-}
-
-#pragma mark - UICollectionViewDelegate
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 2;
-}
-
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellIdentifier forIndexPath:indexPath];
-    
-    // 设置之前先把contentView上的子视图清除掉
-    for (UIView *view in cell.contentView.subviews)
-    {
-        [view removeFromSuperview];
-    }
-
-    // 设置cell的内容
-    UIViewController *childVc = self.childVcs[indexPath.item];
-    childVc.view.frame = cell.contentView.bounds;
-    [cell.contentView addSubview:childVc.view];
-    
-    return cell;
 }
 
 @end

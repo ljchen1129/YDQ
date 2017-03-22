@@ -31,7 +31,7 @@
         <!--挑战-->
         <scene sceneID="S5L-FT-AZ9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Fc-7j-THU" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Fc-7j-THU" customClass="SYNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="挑战" image="tab_icon_challenge_normal" selectedImage="tab_icon_challenge_select" id="2Mh-oA-STo"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

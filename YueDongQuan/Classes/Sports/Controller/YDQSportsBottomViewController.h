@@ -6,8 +6,11 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YDQBaseViewController.h"
 
-@interface YDQSportsBottomViewController : UIViewController
+@interface YDQSportsBottomViewController : YDQBaseViewController
+
+/// 向下点击回调
+@property(nonatomic, copy) void (^slidDown)(void);
 
 @end

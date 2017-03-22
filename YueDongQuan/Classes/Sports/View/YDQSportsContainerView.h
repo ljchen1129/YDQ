@@ -12,4 +12,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame controllers:(NSArray <UIViewController *>*)childVcs parnentVc:(UIViewController *)parnentVc;
 
+/// 设置当前的索引
+- (void)setCurrentIndex:(int)index;
+
 @end

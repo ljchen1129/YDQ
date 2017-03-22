@@ -11,6 +11,10 @@
 
 #import "UIView+CLJExtension.h"
 #import "UIBarButtonItem+CLJExtension.h"
+#import "SYNavigationController.h"
+#import "UIViewController+SYNavigationController.h"
+#import "UIViewController+SYHelper.h"
+#import <Masonry.h>
 
 #ifdef DEBUG
 #define YDQLog(...) NSLog(__VA_ARGS__)
@@ -30,8 +34,36 @@
 /// 随机色
 #define YDQRandomColor YDQRGBColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
 
+#define YDQSprotsTableCellBg YDQRGBColor(30,75,99)
+#define YDQButtonBg YDQRGBColor(64,194,42)
 /// 屏幕尺寸
 #define YDQScreenWidth [UIScreen mainScreen].bounds.size.width
 #define YDQScreenHeight [UIScreen mainScreen].bounds.size.height
+
+/// 状态栏高度
+#define kStatusHeight 20.0
+
+/// weakSelf、stronSelf;
+#define CLJWeakSelf CLJWeakObj(self)
+#define CLJStongSelf CLJStrongObj(self)
+
+#define CLJWeakObj(o) autoreleasepool{} __weak typeof(o) weak##o = o;
+#define CLJStrongObj(o) autoreleasepool{} __strong typeof(o) o = strong##o;
+
+
+/// System判断
+#define ISiPhone    [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
+#define ISiPad      [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
+#define ISiPhone5   ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define ISIOS6 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) // IOS6的系统
+#define ISIOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) // IOS7的系统
+#define ISIOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) // IOS8的系统
+
+#define UIInterfaceOrientationIsPortrait(orientation)  ((orientation) == UIInterfaceOrientationPortrait || (orientation) == UIInterfaceOrientationPortraitUpsideDown)
+#define UIInterfaceOrientationIsLandscape(orientation) ((orientation) == UIInterfaceOrientationLandscapeLeft || (orientation) == UIInterfaceOrientationLandscapeRight)
+
+#define INTERFACEPortrait self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown
+#define INTERFACELandscape self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft || self.interfaceOrientation == UIInterfaceOrientationLandscapeRight
+
 
 #endif /* PrefixHeader_pch */

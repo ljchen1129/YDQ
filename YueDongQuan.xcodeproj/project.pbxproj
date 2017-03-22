@@ -25,6 +25,18 @@
 		5D37EF911E6ED8A300BD4702 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF901E6ED8A300BD4702 /* Social.storyboard */; };
 		5D37EF941E6ED8C100BD4702 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF921E6ED8C100BD4702 /* Profile.storyboard */; };
 		5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */; };
+		5D897E7A1E82635F009A13E0 /* YDQWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E791E82635F009A13E0 /* YDQWeatherViewController.m */; };
+		5D897E7D1E8263B0009A13E0 /* YDQKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E7C1E8263B0009A13E0 /* YDQKeyViewController.m */; };
+		5D897E801E8263EB009A13E0 /* YDQRedbagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E7F1E8263EB009A13E0 /* YDQRedbagViewController.m */; };
+		5D897E831E826415009A13E0 /* YDQLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E821E826415009A13E0 /* YDQLevelViewController.m */; };
+		5D897E8F1E82761D009A13E0 /* SYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E8A1E82761D009A13E0 /* SYNavigationBar.m */; };
+		5D897E901E82761D009A13E0 /* SYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E8C1E82761D009A13E0 /* SYNavigationController.m */; };
+		5D897E911E82761D009A13E0 /* UIViewController+SYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E8E1E82761D009A13E0 /* UIViewController+SYNavigationController.m */; };
+		5D897E941E827FB6009A13E0 /* YDQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E931E827FB6009A13E0 /* YDQBaseViewController.m */; };
+		5D8BAB4C1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */; };
+		5DC6F8B71E82A8AC005E2448 /* UIViewController+SYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */; };
+		5DD66A621E8249B6004E5EAA /* YDQSportsFirstItemTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD66A611E8249B6004E5EAA /* YDQSportsFirstItemTopView.m */; };
+		5DD66A641E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD66A631E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib */; };
 		5DE993091E6EA0A7003C3B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE993081E6EA0A7003C3B14 /* main.m */; };
 		5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9930B1E6EA0A7003C3B14 /* AppDelegate.m */; };
 		5DE993121E6EA0A7003C3B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE993101E6EA0A7003C3B14 /* Main.storyboard */; };
@@ -82,6 +94,29 @@
 		5D37EF991E6EE02900BD4702 /* UIView+CLJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLJExtension.h"; sourceTree = "<group>"; };
 		5D37EF9A1E6EE02900BD4702 /* UIView+CLJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLJExtension.m"; sourceTree = "<group>"; };
 		5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		5D897E781E82635F009A13E0 /* YDQWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQWeatherViewController.h; sourceTree = "<group>"; };
+		5D897E791E82635F009A13E0 /* YDQWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQWeatherViewController.m; sourceTree = "<group>"; };
+		5D897E7B1E8263B0009A13E0 /* YDQKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQKeyViewController.h; sourceTree = "<group>"; };
+		5D897E7C1E8263B0009A13E0 /* YDQKeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQKeyViewController.m; sourceTree = "<group>"; };
+		5D897E7E1E8263EB009A13E0 /* YDQRedbagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQRedbagViewController.h; sourceTree = "<group>"; };
+		5D897E7F1E8263EB009A13E0 /* YDQRedbagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQRedbagViewController.m; sourceTree = "<group>"; };
+		5D897E811E826415009A13E0 /* YDQLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQLevelViewController.h; sourceTree = "<group>"; };
+		5D897E821E826415009A13E0 /* YDQLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQLevelViewController.m; sourceTree = "<group>"; };
+		5D897E891E82761D009A13E0 /* SYNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNavigationBar.h; sourceTree = "<group>"; };
+		5D897E8A1E82761D009A13E0 /* SYNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNavigationBar.m; sourceTree = "<group>"; };
+		5D897E8B1E82761D009A13E0 /* SYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNavigationController.h; sourceTree = "<group>"; };
+		5D897E8C1E82761D009A13E0 /* SYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNavigationController.m; sourceTree = "<group>"; };
+		5D897E8D1E82761D009A13E0 /* UIViewController+SYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SYNavigationController.h"; sourceTree = "<group>"; };
+		5D897E8E1E82761D009A13E0 /* UIViewController+SYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SYNavigationController.m"; sourceTree = "<group>"; };
+		5D897E921E827FB6009A13E0 /* YDQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQBaseViewController.h; sourceTree = "<group>"; };
+		5D897E931E827FB6009A13E0 /* YDQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQBaseViewController.m; sourceTree = "<group>"; };
+		5D8BAB4A1E82C40400BCCD49 /* YDQSportsBottomTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomTableHeader.h; sourceTree = "<group>"; };
+		5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomTableHeader.m; sourceTree = "<group>"; };
+		5DC6F8B51E82A8AC005E2448 /* UIViewController+SYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SYHelper.h"; sourceTree = "<group>"; };
+		5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SYHelper.m"; sourceTree = "<group>"; };
+		5DD66A601E8249B6004E5EAA /* YDQSportsFirstItemTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsFirstItemTopView.h; sourceTree = "<group>"; };
+		5DD66A611E8249B6004E5EAA /* YDQSportsFirstItemTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsFirstItemTopView.m; sourceTree = "<group>"; };
+		5DD66A631E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDQSportsFirstItemTopView.xib; sourceTree = "<group>"; };
 		5DE993041E6EA0A7003C3B14 /* YueDongQuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueDongQuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE993081E6EA0A7003C3B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DE9930A1E6EA0A7003C3B14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -270,6 +305,8 @@
 				5DE993101E6EA0A7003C3B14 /* Main.storyboard */,
 				5D37EF811E6ECF8E00BD4702 /* YDQMainTabBarVC.h */,
 				5D37EF821E6ECF8E00BD4702 /* YDQMainTabBarVC.m */,
+				5D897E921E827FB6009A13E0 /* YDQBaseViewController.h */,
+				5D897E931E827FB6009A13E0 /* YDQBaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +441,14 @@
 				5D1099FF1E6FD88200981736 /* YDQSportsTopViewController.m */,
 				5D109A011E6FD89100981736 /* YDQSportsBottomViewController.h */,
 				5D109A021E6FD89100981736 /* YDQSportsBottomViewController.m */,
+				5D897E781E82635F009A13E0 /* YDQWeatherViewController.h */,
+				5D897E791E82635F009A13E0 /* YDQWeatherViewController.m */,
+				5D897E7B1E8263B0009A13E0 /* YDQKeyViewController.h */,
+				5D897E7C1E8263B0009A13E0 /* YDQKeyViewController.m */,
+				5D897E7E1E8263EB009A13E0 /* YDQRedbagViewController.h */,
+				5D897E7F1E8263EB009A13E0 /* YDQRedbagViewController.m */,
+				5D897E811E826415009A13E0 /* YDQLevelViewController.h */,
+				5D897E821E826415009A13E0 /* YDQLevelViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,6 +465,11 @@
 			children = (
 				5D1099FB1E6FC87A00981736 /* YDQSportsContainerView.h */,
 				5D1099FC1E6FC87A00981736 /* YDQSportsContainerView.m */,
+				5DD66A601E8249B6004E5EAA /* YDQSportsFirstItemTopView.h */,
+				5DD66A611E8249B6004E5EAA /* YDQSportsFirstItemTopView.m */,
+				5DD66A631E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib */,
+				5D8BAB4A1E82C40400BCCD49 /* YDQSportsBottomTableHeader.h */,
+				5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -434,12 +484,35 @@
 		5D37EF961E6EE02900BD4702 /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
+				5DC6F8B51E82A8AC005E2448 /* UIViewController+SYHelper.h */,
+				5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */,
 				5D37EF971E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.h */,
 				5D37EF981E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.m */,
 				5D37EF991E6EE02900BD4702 /* UIView+CLJExtension.h */,
 				5D37EF9A1E6EE02900BD4702 /* UIView+CLJExtension.m */,
 			);
 			path = Categroy;
+			sourceTree = "<group>";
+		};
+		5D897E871E82761D009A13E0 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				5D897E881E82761D009A13E0 /* SYNavigationViewController */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		5D897E881E82761D009A13E0 /* SYNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D897E891E82761D009A13E0 /* SYNavigationBar.h */,
+				5D897E8A1E82761D009A13E0 /* SYNavigationBar.m */,
+				5D897E8B1E82761D009A13E0 /* SYNavigationController.h */,
+				5D897E8C1E82761D009A13E0 /* SYNavigationController.m */,
+				5D897E8D1E82761D009A13E0 /* UIViewController+SYNavigationController.h */,
+				5D897E8E1E82761D009A13E0 /* UIViewController+SYNavigationController.m */,
+			);
+			path = SYNavigationViewController;
 			sourceTree = "<group>";
 		};
 		5DE992FB1E6EA0A7003C3B14 = {
@@ -470,6 +543,7 @@
 				5DE9930A1E6EA0A7003C3B14 /* AppDelegate.h */,
 				5DE9930B1E6EA0A7003C3B14 /* AppDelegate.m */,
 				5D37EF621E6ECE6100BD4702 /* Classes */,
+				5D897E871E82761D009A13E0 /* Externals */,
 				5DE993071E6EA0A7003C3B14 /* Supporting Files */,
 			);
 			path = YueDongQuan;
@@ -636,6 +710,7 @@
 				5D37EF891E6ED7EC00BD4702 /* Sports.storyboard in Resources */,
 				5D37EF911E6ED8A300BD4702 /* Social.storyboard in Resources */,
 				5D37EF8F1E6ED88700BD4702 /* Explore.storyboard in Resources */,
+				5DD66A641E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib in Resources */,
 				5DE993141E6EA0A7003C3B14 /* Assets.xcassets in Resources */,
 				5D37EF941E6ED8C100BD4702 /* Profile.storyboard in Resources */,
 				5DE993121E6EA0A7003C3B14 /* Main.storyboard in Resources */,
@@ -801,9 +876,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC6F8B71E82A8AC005E2448 /* UIViewController+SYHelper.m in Sources */,
 				5D302B781E82236E00071F53 /* UIBarButtonItem+CLJExtension.m in Sources */,
 				5D302B791E82236E00071F53 /* UIView+CLJExtension.m in Sources */,
 				5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */,
+				5D897E7D1E8263B0009A13E0 /* YDQKeyViewController.m in Sources */,
+				5D897E8F1E82761D009A13E0 /* SYNavigationBar.m in Sources */,
 				5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */,
 				5D109A061E6FD9C500981736 /* YDQMainPageTitleView.m in Sources */,
 				5DE993091E6EA0A7003C3B14 /* main.m in Sources */,
@@ -813,10 +891,18 @@
 				5D37EF861E6ED28800BD4702 /* YDQSportsViewController.m in Sources */,
 				5DFF94691E6EF963003D3026 /* YDQChallengeViewController.m in Sources */,
 				5DFF946F1E6EF9A8003D3026 /* YDQSocialViewController.m in Sources */,
+				5D897E7A1E82635F009A13E0 /* YDQWeatherViewController.m in Sources */,
+				5D897E801E8263EB009A13E0 /* YDQRedbagViewController.m in Sources */,
+				5D8BAB4C1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m in Sources */,
 				5DFF94721E6EF9DB003D3026 /* YDQProfileViewController.m in Sources */,
+				5D897E941E827FB6009A13E0 /* YDQBaseViewController.m in Sources */,
+				5DD66A621E8249B6004E5EAA /* YDQSportsFirstItemTopView.m in Sources */,
+				5D897E901E82761D009A13E0 /* SYNavigationController.m in Sources */,
 				5D109A031E6FD89100981736 /* YDQSportsBottomViewController.m in Sources */,
+				5D897E831E826415009A13E0 /* YDQLevelViewController.m in Sources */,
 				5DFF946C1E6EF98B003D3026 /* YDQExploreViewController.m in Sources */,
 				5D109A001E6FD88200981736 /* YDQSportsTopViewController.m in Sources */,
+				5D897E911E82761D009A13E0 /* UIViewController+SYNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

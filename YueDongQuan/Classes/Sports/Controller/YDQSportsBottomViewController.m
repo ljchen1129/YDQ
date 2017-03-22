@@ -8,16 +8,94 @@
 //
 
 #import "YDQSportsBottomViewController.h"
+#import "YDQSportsBottomTableHeader.h"
 
-@interface YDQSportsBottomViewController ()
+@interface YDQSportsBottomViewController () <UITableViewDataSource, UITableViewDelegate>
+
+/// 表格视图
+@property(nonatomic, strong) UITableView *tableView;
 
 @end
 
 @implementation YDQSportsBottomViewController
 
+#pragma mark - liftCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 设置UI
+    [self setUI];
+}
+
+#pragma mark - UI
+
+- (void)setUI
+{
+    [self.view addSubview:self.tableView];
+    self.tableView.frame = self.view.bounds;
+    
+    // 注册头视图
+    [self.tableView registerClass:[YDQSportsBottomTableHeader class] forHeaderFooterViewReuseIdentifier:YDQSportsBottomTableHeaderIndetifierId];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellId"];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"行号：%ld", indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return YDQSportsBottomTableHeaderHeight;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    YDQSportsBottomTableHeader *header = [YDQSportsBottomTableHeader headerWithTableView:tableView];
+    header.sildDown = ^{
+        if (_slidDown)
+        {
+            _slidDown();
+        }
+    };
+    
+    return header;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - setter
+
+- (UITableView*)tableView
+{
+    if (!_tableView)
+    {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.scrollEnabled = YES;
+        _tableView.backgroundColor = [UIColor whiteColor];
+    }
+    
+    return _tableView;
 }
 
 @end

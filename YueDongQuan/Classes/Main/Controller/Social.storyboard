@@ -31,7 +31,7 @@
         <!--圈子-->
         <scene sceneID="Yz1-gC-cRw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWl-sr-bd8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWl-sr-bd8" customClass="SYNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="圈子" image="tab_icon_social_normal" selectedImage="tab_icon_social_select" id="AIS-mj-7op"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

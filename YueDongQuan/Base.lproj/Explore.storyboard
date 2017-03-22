@@ -31,7 +31,7 @@
         <!--发现-->
         <scene sceneID="Djm-JD-xsB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXc-0U-CCM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXc-0U-CCM" customClass="SYNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="发现" image="tab_icon_explore_normal" selectedImage="tab_icon_explore_select" id="0AG-Io-yrB"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

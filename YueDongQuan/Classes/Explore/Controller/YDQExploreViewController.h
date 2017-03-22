@@ -6,8 +6,8 @@
 //  Copyright © 2017年 陈良静. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YDQBaseViewController.h"
 
-@interface YDQExploreViewController : UIViewController
+@interface YDQExploreViewController : YDQBaseViewController
 
 @end

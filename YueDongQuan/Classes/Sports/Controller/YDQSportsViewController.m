@@ -16,6 +16,12 @@
 /// contentView
 @property(nonatomic, strong) YDQSportsContainerView *contentView;
 
+/// YDQSportsTopViewController
+@property(nonatomic, strong) YDQSportsTopViewController *topVc;
+
+/// YDQSportsBottomViewController
+@property(nonatomic, strong) YDQSportsBottomViewController *bottomVc;
+
 @end
 
 @implementation YDQSportsViewController
@@ -25,7 +31,7 @@
     
     self.navigationController.delegate = self;
 //    self.view.backgroundColor = YDQRandomColor;
-    // 1.不要调整UIScrollView的内边距，不然系统会自动将scrollView的y坐标加64
+    // 
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.contentView];
 }
@@ -43,17 +49,40 @@
 {
     if (!_contentView)
     {
-        NSMutableArray *tempArray = [NSMutableArray array];
-        YDQSportsTopViewController *topVc = [[YDQSportsTopViewController alloc] init];
-        [tempArray addObject:topVc];
-        topVc.view.backgroundColor = YDQRandomColor;
-        YDQSportsBottomViewController *bottomVc = [[YDQSportsBottomViewController alloc] init];
-        [tempArray addObject:bottomVc];
-        
-        _contentView = [[YDQSportsContainerView alloc] initWithFrame:self.view.bounds controllers:tempArray parnentVc:self];
+        _contentView = [[YDQSportsContainerView alloc] initWithFrame:self.view.bounds controllers:@[self.topVc, self.bottomVc] parnentVc:self];
     }
     
     return _contentView;
+}
+
+- (YDQSportsTopViewController *)topVc
+{
+    if (!_topVc)
+    {
+        _topVc = [[YDQSportsTopViewController alloc] init];
+        _topVc.view.backgroundColor = YDQRandomColor;
+        @CLJWeakSelf
+        self.topVc.slidUpCallBack = ^(SportsType type){
+            [weakself.contentView setCurrentIndex:1];
+        };
+    }
+    
+    return _topVc;
+}
+
+- (YDQSportsBottomViewController *)bottomVc
+{
+    if (!_bottomVc)
+    {
+        _bottomVc = [[YDQSportsBottomViewController alloc] init];
+        _bottomVc.view.backgroundColor = YDQRandomColor;
+        @CLJWeakSelf
+        _bottomVc.slidDown = ^{
+            [weakself.contentView setCurrentIndex:0];
+        };
+    }
+    
+    return _bottomVc;
 }
 
 @end

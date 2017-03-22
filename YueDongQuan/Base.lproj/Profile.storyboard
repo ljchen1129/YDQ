@@ -31,7 +31,7 @@
         <!--我的-->
         <scene sceneID="cCf-2f-Dgx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iCd-7l-eWk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iCd-7l-eWk" customClass="SYNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="tab_icon_profile_normal" selectedImage="tab_icon_profile_select" id="DF3-8S-fvA"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
