@@ -13,4 +13,7 @@
 /// 向下点击回调
 @property(nonatomic, copy) void (^slidDown)(void);
 
+/// 运动类型
+@property(nonatomic, assign) SportsType sportsType;
+
 @end

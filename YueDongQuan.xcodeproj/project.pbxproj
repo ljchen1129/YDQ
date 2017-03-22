@@ -112,6 +112,7 @@
 		5D897E931E827FB6009A13E0 /* YDQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQBaseViewController.m; sourceTree = "<group>"; };
 		5D8BAB4A1E82C40400BCCD49 /* YDQSportsBottomTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomTableHeader.h; sourceTree = "<group>"; };
 		5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomTableHeader.m; sourceTree = "<group>"; };
+		5D9369DA1E82E0DB005A000C /* YDQSportsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDQSportsHeader.h; sourceTree = "<group>"; };
 		5DC6F8B51E82A8AC005E2448 /* UIViewController+SYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SYHelper.h"; sourceTree = "<group>"; };
 		5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SYHelper.m"; sourceTree = "<group>"; };
 		5DD66A601E8249B6004E5EAA /* YDQSportsFirstItemTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsFirstItemTopView.h; sourceTree = "<group>"; };
@@ -477,6 +478,7 @@
 		5D37EF801E6ECE6100BD4702 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5D9369DA1E82E0DB005A000C /* YDQSportsHeader.h */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

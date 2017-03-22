@@ -15,6 +15,9 @@
 /// 表格视图
 @property(nonatomic, strong) UITableView *tableView;
 
+/// header
+@property(nonatomic, strong) YDQSportsBottomTableHeader *header;
+
 @end
 
 @implementation YDQSportsBottomViewController
@@ -37,6 +40,13 @@
     
     // 注册头视图
     [self.tableView registerClass:[YDQSportsBottomTableHeader class] forHeaderFooterViewReuseIdentifier:YDQSportsBottomTableHeaderIndetifierId];
+}
+
+#pragma mark - publicMothed
+
+- (void)resetUIWith:(SportsType)type
+{
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -74,6 +84,12 @@
         }
     };
     
+    header.doSportsCallBack = ^(SportsType type) {
+        YDQLog(@"type:%ld", type);
+    };
+    
+    self.header = header;
+    
     return header;
 }
 
@@ -84,6 +100,15 @@
 
 #pragma mark - setter
 
+- (void)setSportsType:(SportsType)sportsType
+{
+    _sportsType = sportsType;
+    
+    self.header.sportsType = _sportsType;
+}
+
+#pragma mark - getter
+
 - (UITableView*)tableView
 {
     if (!_tableView)
@@ -91,7 +116,6 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.scrollEnabled = YES;
         _tableView.backgroundColor = [UIColor whiteColor];
     }
     

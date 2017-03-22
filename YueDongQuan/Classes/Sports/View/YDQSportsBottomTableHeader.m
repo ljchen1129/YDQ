@@ -8,6 +8,13 @@
 
 #import "YDQSportsBottomTableHeader.h"
 
+@interface YDQSportsBottomTableHeader ()
+
+/// 分享步数/开始跑步/开始健身/开始骑行 按钮
+@property(nonatomic, strong) UIButton *doSportBtn;
+
+@end
+
 @implementation YDQSportsBottomTableHeader
 
 + (instancetype)headerWithTableView:(UITableView *)tableView
@@ -52,21 +59,21 @@
     }];
     
     // 分享步数/开始跑步/开始健身/开始骑行 按钮
-    UIButton *doSportBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.contentView addSubview:doSportBtn];
-    [doSportBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.doSportBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.contentView addSubview:self.doSportBtn];
+    [self.doSportBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-13.0);
         make.bottom.mas_equalTo(-13.0);
         make.size.mas_equalTo(CGSizeMake(80.0, 40.0));
     }];
     
-    doSportBtn.backgroundColor = YDQButtonBg;
-    [doSportBtn setTitle:@"分享步数" forState:UIControlStateNormal];
-    [doSportBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    doSportBtn.titleLabel.font = [UIFont systemFontOfSize:15.0];
-    [doSportBtn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    doSportBtn.layer.cornerRadius = 20.0;
-    doSportBtn.layer.masksToBounds = YES;
+    self.doSportBtn.backgroundColor = YDQButtonBg;
+    [self.doSportBtn setTitle:@"分享步数" forState:UIControlStateNormal];
+    [self.doSportBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.doSportBtn.titleLabel.font = [UIFont systemFontOfSize:15.0];
+    [self.doSportBtn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.doSportBtn.layer.cornerRadius = 20.0;
+    self.doSportBtn.layer.masksToBounds = YES;
 }
 
 #pragma mark - eventResponse
@@ -81,7 +88,21 @@
 
 - (void)btnClick
 {
-    YDQLog(@"分享步数");
+    if (_doSportsCallBack)
+    {
+        _doSportsCallBack(self.sportsType);
+    }
+}
+
+#pragma mark - setter
+
+- (void)setSportsType:(SportsType)sportsType
+{
+    _sportsType = sportsType;
+    
+    NSArray *doSportBtnTittes = @[@"分享步数", @"开始跑步", @"开始健身", @"开始骑行"];
+    NSString *title = doSportBtnTittes[_sportsType];
+    [self.doSportBtn setTitle:title forState:UIControlStateNormal];
 }
 
 @end

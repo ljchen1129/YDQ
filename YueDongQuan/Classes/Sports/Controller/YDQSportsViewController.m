@@ -50,6 +50,10 @@
     if (!_contentView)
     {
         _contentView = [[YDQSportsContainerView alloc] initWithFrame:self.view.bounds controllers:@[self.topVc, self.bottomVc] parnentVc:self];
+        @CLJWeakSelf
+        _contentView.slidUpCallBack = ^(SportsType type){
+            weakself.bottomVc.sportsType = type;
+        };
     }
     
     return _contentView;
@@ -64,6 +68,7 @@
         @CLJWeakSelf
         self.topVc.slidUpCallBack = ^(SportsType type){
             [weakself.contentView setCurrentIndex:1];
+            weakself.bottomVc.sportsType = type;
         };
     }
     

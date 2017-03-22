@@ -18,5 +18,11 @@ static NSString *const YDQSportsBottomTableHeaderIndetifierId = @"YDQSportsBotto
 /// 向下滑块响应回调
 @property(nonatomic, copy) void (^sildDown)(void);
 
+/// 运动按钮响应回调
+@property(nonatomic, copy) void (^doSportsCallBack)(SportsType type);
+
+/// 运动类型
+@property(nonatomic, assign) SportsType sportsType;
+
 @end
 

@@ -8,22 +8,12 @@
 
 #import "YDQBaseViewController.h"
 
-/// 运动类型
-typedef NS_ENUM(NSUInteger, SportsType)
-{
-    /// 计步
-    SportsTypeByStep = 0,
-    /// 跑步
-    SportsTypeByRun = 1,
-    /// 健身
-    SportsTypeByFitness = 2,
-    /// 骑行
-    SportsTypeByRide = 3
-};
-
 @interface YDQSportsTopViewController : YDQBaseViewController
 
 /// 向上滑动回调
 @property(nonatomic, copy) void (^slidUpCallBack)(SportsType type);
+
+/// 获取当前的运动类型
+- (SportsType)getCurrentSportType;
 
 @end

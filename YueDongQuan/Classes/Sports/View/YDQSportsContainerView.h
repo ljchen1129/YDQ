@@ -15,4 +15,7 @@
 /// 设置当前的索引
 - (void)setCurrentIndex:(int)index;
 
+/// 上滑响应回调
+@property(nonatomic, copy) void (^slidUpCallBack)(SportsType type);
+
 @end

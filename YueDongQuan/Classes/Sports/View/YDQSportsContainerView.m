@@ -7,11 +7,12 @@
 //
 
 #import "YDQSportsContainerView.h"
+#import "YDQSportsTopViewController.h"
 
 static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdentifier";
 static NSInteger const kConllectionItems = 2;
 
-@interface YDQSportsContainerView () <UICollectionViewDataSource>
+@interface YDQSportsContainerView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 /// 子控制器数组
 @property(nonatomic, strong)NSArray *childVcs;
@@ -21,6 +22,9 @@ static NSInteger const kConllectionItems = 2;
 
 /// collectionView
 @property(nonatomic, strong) UICollectionView *collectionView;
+
+/// collectionView 开始滑动时的竖直偏移量
+@property(nonatomic, assign) CGFloat startOffsetY;
 
 @end
 
@@ -68,6 +72,28 @@ static NSInteger const kConllectionItems = 2;
 
 #pragma mark - UICollectionViewDelegate
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    self.startOffsetY = scrollView.contentOffset.y;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    // 1.先判断是上滑还是下滑
+    CGFloat currentOffsetY = scrollView.contentOffset.y;
+    CGFloat scrollViewH = scrollView.bounds.size.height;
+    YDQSportsTopViewController *topVc = (YDQSportsTopViewController *)self.childVcs[0];
+    SportsType type = [topVc getCurrentSportType];
+    if (currentOffsetY > self.startOffsetY && currentOffsetY > scrollViewH / 2)
+    {
+        // 上滑
+        if (_slidUpCallBack)
+        {
+            _slidUpCallBack(type);
+        }
+    }
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return kConllectionItems;
@@ -108,6 +134,7 @@ static NSInteger const kConllectionItems = 2;
         _collectionView.bounces = NO;
         _collectionView.pagingEnabled = YES;
         _collectionView.dataSource = self;
+        _collectionView.delegate = self;
     }
     
     return _collectionView;

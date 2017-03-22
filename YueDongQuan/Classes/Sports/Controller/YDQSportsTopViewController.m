@@ -39,6 +39,8 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 
 @implementation YDQSportsTopViewController
 
+#pragma mark - lifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -96,12 +98,17 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
     }];
 }
 
+#pragma mark - publicMothed
+
+- (SportsType)getCurrentSportType
+{
+    return self.currentSportType;
+}
+
 #pragma mark - eventResponse
 
 - (void)slidup
 {
-    YDQLog(@"slidup-----%ld", self.currentSportType);
-    
     if (_slidUpCallBack)
     {
         _slidUpCallBack(self.currentSportType);

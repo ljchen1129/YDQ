@@ -9,6 +9,9 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+// sports
+#import "YDQSportsHeader.h"
+
 #import "UIView+CLJExtension.h"
 #import "UIBarButtonItem+CLJExtension.h"
 #import "SYNavigationController.h"
