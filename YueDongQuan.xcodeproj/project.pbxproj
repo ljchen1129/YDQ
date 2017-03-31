@@ -25,6 +25,13 @@
 		5D37EF911E6ED8A300BD4702 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF901E6ED8A300BD4702 /* Social.storyboard */; };
 		5D37EF941E6ED8C100BD4702 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37EF921E6ED8C100BD4702 /* Profile.storyboard */; };
 		5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */; };
+		5D54220A1E83BCB200729248 /* YDQSportsBottomSportsDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5422081E83BCB200729248 /* YDQSportsBottomSportsDataCell.m */; };
+		5D54220B1E83BCB200729248 /* YDQSportsBottomSportsDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D5422091E83BCB200729248 /* YDQSportsBottomSportsDataCell.xib */; };
+		5D54220F1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D54220D1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.m */; };
+		5D5422101E83BFC700729248 /* YDQSportsBottomBodyWeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D54220E1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.xib */; };
+		5D5422141E83C31C00729248 /* YDQSportsBottomNewAchievementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5422121E83C31C00729248 /* YDQSportsBottomNewAchievementCell.m */; };
+		5D5422151E83C31C00729248 /* YDQSportsBottomNewAchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D5422131E83C31C00729248 /* YDQSportsBottomNewAchievementCell.xib */; };
+		5D5422181E83EFDC00729248 /* YDQSportsBottomNomalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5422171E83EFDC00729248 /* YDQSportsBottomNomalCell.m */; };
 		5D897E7A1E82635F009A13E0 /* YDQWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E791E82635F009A13E0 /* YDQWeatherViewController.m */; };
 		5D897E7D1E8263B0009A13E0 /* YDQKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E7C1E8263B0009A13E0 /* YDQKeyViewController.m */; };
 		5D897E801E8263EB009A13E0 /* YDQRedbagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E7F1E8263EB009A13E0 /* YDQRedbagViewController.m */; };
@@ -34,9 +41,15 @@
 		5D897E911E82761D009A13E0 /* UIViewController+SYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E8E1E82761D009A13E0 /* UIViewController+SYNavigationController.m */; };
 		5D897E941E827FB6009A13E0 /* YDQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D897E931E827FB6009A13E0 /* YDQBaseViewController.m */; };
 		5D8BAB4C1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */; };
+		5DA621FE1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA621FD1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.m */; };
+		5DA622011E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA622001E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.m */; };
+		5DA622041E8E96EA0010EE94 /* YDQSportsBottomTableFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA622031E8E96EA0010EE94 /* YDQSportsBottomTableFooter.m */; };
+		5DA622081E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA622061E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.m */; };
+		5DA622091E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA622071E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.xib */; };
 		5DC6F8B71E82A8AC005E2448 /* UIViewController+SYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */; };
 		5DD66A621E8249B6004E5EAA /* YDQSportsFirstItemTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD66A611E8249B6004E5EAA /* YDQSportsFirstItemTopView.m */; };
 		5DD66A641E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD66A631E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib */; };
+		5DD7114C1E83F84C0032D5C1 /* UIImage+CLJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7114B1E83F84C0032D5C1 /* UIImage+CLJExtension.m */; };
 		5DE993091E6EA0A7003C3B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE993081E6EA0A7003C3B14 /* main.m */; };
 		5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9930B1E6EA0A7003C3B14 /* AppDelegate.m */; };
 		5DE993121E6EA0A7003C3B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE993101E6EA0A7003C3B14 /* Main.storyboard */; };
@@ -94,6 +107,17 @@
 		5D37EF991E6EE02900BD4702 /* UIView+CLJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLJExtension.h"; sourceTree = "<group>"; };
 		5D37EF9A1E6EE02900BD4702 /* UIView+CLJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLJExtension.m"; sourceTree = "<group>"; };
 		5D37EF9D1E6EE03B00BD4702 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		5D5422071E83BCB200729248 /* YDQSportsBottomSportsDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomSportsDataCell.h; sourceTree = "<group>"; };
+		5D5422081E83BCB200729248 /* YDQSportsBottomSportsDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomSportsDataCell.m; sourceTree = "<group>"; };
+		5D5422091E83BCB200729248 /* YDQSportsBottomSportsDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDQSportsBottomSportsDataCell.xib; sourceTree = "<group>"; };
+		5D54220C1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomBodyWeightCell.h; sourceTree = "<group>"; };
+		5D54220D1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomBodyWeightCell.m; sourceTree = "<group>"; };
+		5D54220E1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDQSportsBottomBodyWeightCell.xib; sourceTree = "<group>"; };
+		5D5422111E83C31C00729248 /* YDQSportsBottomNewAchievementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomNewAchievementCell.h; sourceTree = "<group>"; };
+		5D5422121E83C31C00729248 /* YDQSportsBottomNewAchievementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomNewAchievementCell.m; sourceTree = "<group>"; };
+		5D5422131E83C31C00729248 /* YDQSportsBottomNewAchievementCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDQSportsBottomNewAchievementCell.xib; sourceTree = "<group>"; };
+		5D5422161E83EFDC00729248 /* YDQSportsBottomNomalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDQSportsBottomNomalCell.h; path = ../../../YDQSportsBottomNomalCell.h; sourceTree = "<group>"; };
+		5D5422171E83EFDC00729248 /* YDQSportsBottomNomalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDQSportsBottomNomalCell.m; path = ../../../YDQSportsBottomNomalCell.m; sourceTree = "<group>"; };
 		5D897E781E82635F009A13E0 /* YDQWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQWeatherViewController.h; sourceTree = "<group>"; };
 		5D897E791E82635F009A13E0 /* YDQWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQWeatherViewController.m; sourceTree = "<group>"; };
 		5D897E7B1E8263B0009A13E0 /* YDQKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQKeyViewController.h; sourceTree = "<group>"; };
@@ -113,11 +137,22 @@
 		5D8BAB4A1E82C40400BCCD49 /* YDQSportsBottomTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomTableHeader.h; sourceTree = "<group>"; };
 		5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomTableHeader.m; sourceTree = "<group>"; };
 		5D9369DA1E82E0DB005A000C /* YDQSportsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDQSportsHeader.h; sourceTree = "<group>"; };
+		5DA621FC1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomTableSectionHeader.h; sourceTree = "<group>"; };
+		5DA621FD1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomTableSectionHeader.m; sourceTree = "<group>"; };
+		5DA621FF1E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomTableSectionFooter.h; sourceTree = "<group>"; };
+		5DA622001E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomTableSectionFooter.m; sourceTree = "<group>"; };
+		5DA622021E8E96EA0010EE94 /* YDQSportsBottomTableFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomTableFooter.h; sourceTree = "<group>"; };
+		5DA622031E8E96EA0010EE94 /* YDQSportsBottomTableFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomTableFooter.m; sourceTree = "<group>"; };
+		5DA622051E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsBottomSportsDrysCell.h; sourceTree = "<group>"; };
+		5DA622061E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsBottomSportsDrysCell.m; sourceTree = "<group>"; };
+		5DA622071E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDQSportsBottomSportsDrysCell.xib; sourceTree = "<group>"; };
 		5DC6F8B51E82A8AC005E2448 /* UIViewController+SYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SYHelper.h"; sourceTree = "<group>"; };
 		5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SYHelper.m"; sourceTree = "<group>"; };
 		5DD66A601E8249B6004E5EAA /* YDQSportsFirstItemTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDQSportsFirstItemTopView.h; sourceTree = "<group>"; };
 		5DD66A611E8249B6004E5EAA /* YDQSportsFirstItemTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDQSportsFirstItemTopView.m; sourceTree = "<group>"; };
 		5DD66A631E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDQSportsFirstItemTopView.xib; sourceTree = "<group>"; };
+		5DD7114A1E83F84C0032D5C1 /* UIImage+CLJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CLJExtension.h"; path = "../../../UIImage+CLJExtension.h"; sourceTree = "<group>"; };
+		5DD7114B1E83F84C0032D5C1 /* UIImage+CLJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CLJExtension.m"; path = "../../../UIImage+CLJExtension.m"; sourceTree = "<group>"; };
 		5DE993041E6EA0A7003C3B14 /* YueDongQuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueDongQuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE993081E6EA0A7003C3B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DE9930A1E6EA0A7003C3B14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -471,6 +506,26 @@
 				5DD66A631E8249DE004E5EAA /* YDQSportsFirstItemTopView.xib */,
 				5D8BAB4A1E82C40400BCCD49 /* YDQSportsBottomTableHeader.h */,
 				5D8BAB4B1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m */,
+				5DA622021E8E96EA0010EE94 /* YDQSportsBottomTableFooter.h */,
+				5DA622031E8E96EA0010EE94 /* YDQSportsBottomTableFooter.m */,
+				5DA621FC1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.h */,
+				5DA621FD1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.m */,
+				5DA621FF1E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.h */,
+				5DA622001E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.m */,
+				5D5422071E83BCB200729248 /* YDQSportsBottomSportsDataCell.h */,
+				5D5422081E83BCB200729248 /* YDQSportsBottomSportsDataCell.m */,
+				5D5422091E83BCB200729248 /* YDQSportsBottomSportsDataCell.xib */,
+				5D54220C1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.h */,
+				5D54220D1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.m */,
+				5D54220E1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.xib */,
+				5D5422111E83C31C00729248 /* YDQSportsBottomNewAchievementCell.h */,
+				5D5422121E83C31C00729248 /* YDQSportsBottomNewAchievementCell.m */,
+				5D5422131E83C31C00729248 /* YDQSportsBottomNewAchievementCell.xib */,
+				5DA622051E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.h */,
+				5DA622061E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.m */,
+				5DA622071E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.xib */,
+				5D5422161E83EFDC00729248 /* YDQSportsBottomNomalCell.h */,
+				5D5422171E83EFDC00729248 /* YDQSportsBottomNomalCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,6 +541,8 @@
 		5D37EF961E6EE02900BD4702 /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
+				5DD7114A1E83F84C0032D5C1 /* UIImage+CLJExtension.h */,
+				5DD7114B1E83F84C0032D5C1 /* UIImage+CLJExtension.m */,
 				5DC6F8B51E82A8AC005E2448 /* UIViewController+SYHelper.h */,
 				5DC6F8B61E82A8AC005E2448 /* UIViewController+SYHelper.m */,
 				5D37EF971E6EE02900BD4702 /* UIBarButtonItem+CLJExtension.h */,
@@ -707,7 +764,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5422101E83BFC700729248 /* YDQSportsBottomBodyWeightCell.xib in Resources */,
 				5D37EF8C1E6ED85A00BD4702 /* Challenge.storyboard in Resources */,
+				5D54220B1E83BCB200729248 /* YDQSportsBottomSportsDataCell.xib in Resources */,
 				5DE993171E6EA0A7003C3B14 /* LaunchScreen.storyboard in Resources */,
 				5D37EF891E6ED7EC00BD4702 /* Sports.storyboard in Resources */,
 				5D37EF911E6ED8A300BD4702 /* Social.storyboard in Resources */,
@@ -716,6 +775,8 @@
 				5DE993141E6EA0A7003C3B14 /* Assets.xcassets in Resources */,
 				5D37EF941E6ED8C100BD4702 /* Profile.storyboard in Resources */,
 				5DE993121E6EA0A7003C3B14 /* Main.storyboard in Resources */,
+				5DA622091E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.xib in Resources */,
+				5D5422151E83C31C00729248 /* YDQSportsBottomNewAchievementCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,22 +944,31 @@
 				5D302B791E82236E00071F53 /* UIView+CLJExtension.m in Sources */,
 				5DE9930C1E6EA0A7003C3B14 /* AppDelegate.m in Sources */,
 				5D897E7D1E8263B0009A13E0 /* YDQKeyViewController.m in Sources */,
+				5D5422181E83EFDC00729248 /* YDQSportsBottomNomalCell.m in Sources */,
 				5D897E8F1E82761D009A13E0 /* SYNavigationBar.m in Sources */,
 				5D37EF9E1E6EE03B00BD4702 /* Foundation+Log.m in Sources */,
+				5DA622011E8E8F0E0010EE94 /* YDQSportsBottomTableSectionFooter.m in Sources */,
 				5D109A061E6FD9C500981736 /* YDQMainPageTitleView.m in Sources */,
 				5DE993091E6EA0A7003C3B14 /* main.m in Sources */,
 				5D109A091E6FF70500981736 /* YDQMainPageContentView.m in Sources */,
 				5D1099FD1E6FC87A00981736 /* YDQSportsContainerView.m in Sources */,
+				5DA622081E8EA5E40010EE94 /* YDQSportsBottomSportsDrysCell.m in Sources */,
 				5D37EF831E6ECF8E00BD4702 /* YDQMainTabBarVC.m in Sources */,
 				5D37EF861E6ED28800BD4702 /* YDQSportsViewController.m in Sources */,
+				5D54220A1E83BCB200729248 /* YDQSportsBottomSportsDataCell.m in Sources */,
+				5DA621FE1E8E86030010EE94 /* YDQSportsBottomTableSectionHeader.m in Sources */,
 				5DFF94691E6EF963003D3026 /* YDQChallengeViewController.m in Sources */,
 				5DFF946F1E6EF9A8003D3026 /* YDQSocialViewController.m in Sources */,
 				5D897E7A1E82635F009A13E0 /* YDQWeatherViewController.m in Sources */,
 				5D897E801E8263EB009A13E0 /* YDQRedbagViewController.m in Sources */,
+				5DD7114C1E83F84C0032D5C1 /* UIImage+CLJExtension.m in Sources */,
+				5D54220F1E83BFC700729248 /* YDQSportsBottomBodyWeightCell.m in Sources */,
+				5D5422141E83C31C00729248 /* YDQSportsBottomNewAchievementCell.m in Sources */,
 				5D8BAB4C1E82C40400BCCD49 /* YDQSportsBottomTableHeader.m in Sources */,
 				5DFF94721E6EF9DB003D3026 /* YDQProfileViewController.m in Sources */,
 				5D897E941E827FB6009A13E0 /* YDQBaseViewController.m in Sources */,
 				5DD66A621E8249B6004E5EAA /* YDQSportsFirstItemTopView.m in Sources */,
+				5DA622041E8E96EA0010EE94 /* YDQSportsBottomTableFooter.m in Sources */,
 				5D897E901E82761D009A13E0 /* SYNavigationController.m in Sources */,
 				5D109A031E6FD89100981736 /* YDQSportsBottomViewController.m in Sources */,
 				5D897E831E826415009A13E0 /* YDQLevelViewController.m in Sources */,

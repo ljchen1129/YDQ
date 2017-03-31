@@ -10,7 +10,16 @@
 
 @protocol PageContentViewDelegate <NSObject>
 
-- (void)pageContentView:(UIView *)pageContentView ScrollSourceIndex:(int)sourceIndex targetIndex:(int)targetIndex progress:(CGFloat)progress;
+/**
+    scroll滑动代理
+
+ @param pageContentView 类实例
+ @param sourceIndex 起始索引
+ @param targetIndex 目标索引
+ @param progress 滑动进度
+ @param isSuccesed 是否成功滑过去
+ */
+- (void)pageContentView:(UIView *)pageContentView ScrollSourceIndex:(int)sourceIndex targetIndex:(int)targetIndex progress:(CGFloat)progress isSuccesed:(BOOL)isSuccesed;
 
 @end
 

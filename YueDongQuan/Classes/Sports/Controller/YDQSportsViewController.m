@@ -30,9 +30,7 @@
     [super viewDidLoad];
     
     self.navigationController.delegate = self;
-//    self.view.backgroundColor = YDQRandomColor;
-    // 
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = YDQRGBColor(43, 89, 118);
     [self.view addSubview:self.contentView];
 }
 
@@ -64,11 +62,14 @@
     if (!_topVc)
     {
         _topVc = [[YDQSportsTopViewController alloc] init];
-        _topVc.view.backgroundColor = YDQRandomColor;
         @CLJWeakSelf
-        self.topVc.slidUpCallBack = ^(SportsType type){
+        _topVc.slidUpCallBack = ^(SportsType type){
             [weakself.contentView setCurrentIndex:1];
             weakself.bottomVc.sportsType = type;
+        };
+        
+        _topVc.changeSportsType = ^(SportsType type) {
+            weakself.view.backgroundColor = YDQRandomColor;
         };
     }
     
@@ -80,7 +81,7 @@
     if (!_bottomVc)
     {
         _bottomVc = [[YDQSportsBottomViewController alloc] init];
-        _bottomVc.view.backgroundColor = YDQRandomColor;
+        _bottomVc.view.backgroundColor = YDQClearColor;
         @CLJWeakSelf
         _bottomVc.slidDown = ^{
             [weakself.contentView setCurrentIndex:0];

@@ -91,6 +91,7 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
         _collectionView.pagingEnabled = YES;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
+        _collectionView.backgroundColor = YDQClearColor;
     }
     
     return _collectionView;
@@ -185,8 +186,10 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
         progess = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW));
     }
     
-    if ([self.delegate respondsToSelector:@selector(pageContentView:ScrollSourceIndex:targetIndex:progress:)]) {
-        [self.delegate pageContentView:self ScrollSourceIndex:sourceIndex targetIndex:targetIndex progress:progess];
+    // 当滑动的偏移量大于 scrollViewW 的一半，则成功滑动
+    BOOL isSuccesed = ABS(currentOffsetX - self.startOffsetX) > scrollViewW / 2 && progess == 1;
+    if ([self.delegate respondsToSelector:@selector(pageContentView:ScrollSourceIndex:targetIndex:progress:isSuccesed:)]) {
+        [self.delegate pageContentView:self ScrollSourceIndex:sourceIndex targetIndex:targetIndex progress:progess isSuccesed:isSuccesed];
     }
 }
 

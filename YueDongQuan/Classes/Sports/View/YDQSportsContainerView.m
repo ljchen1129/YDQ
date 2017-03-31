@@ -131,10 +131,11 @@ static NSInteger const kConllectionItems = 2;
         
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.showsVerticalScrollIndicator = NO;
-        _collectionView.bounces = NO;
+        _collectionView.alwaysBounceVertical = YES;
         _collectionView.pagingEnabled = YES;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
+        _collectionView.backgroundColor = YDQClearColor;
     }
     
     return _collectionView;

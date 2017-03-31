@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="YDQSportsBottomNewAchievementCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train_daily" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-iB-Mwa" userLabel="redBagImageView">
+                        <rect key="frame" x="10" y="10" width="75" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="NLD-vQ-FDM"/>
+                            <constraint firstAttribute="height" constant="65" id="dbp-bZ-EBK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计领取10个红包" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZb-ZU-EQQ">
+                        <rect key="frame" x="95" y="10" width="148" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成就奖励：第10个红包金额翻倍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSY-5Q-FdW">
+                        <rect key="frame" x="95" y="37" width="201" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="eLC-2o-vuT">
+                        <rect key="frame" x="95" y="64" width="200" height="5"/>
+                        <color key="tintColor" red="0.084203831851482391" green="0.77602308988571167" blue="0.11194262653589249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Vkk-k1-pnS"/>
+                            <constraint firstAttribute="height" constant="5" id="kB3-E7-OEN"/>
+                        </constraints>
+                        <color key="progressTintColor" red="0.084203831851482391" green="0.77602308988571167" blue="0.11194262653589249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" red="0.0048603457398712635" green="0.4500768780708313" blue="0.99939876794815063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已领取4个红包" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-Im-p5f">
+                        <rect key="frame" x="95" y="71" width="68" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vna-TF-tmy">
+                        <rect key="frame" x="274" y="71" width="21" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.44496682286262512" green="0.68622285127639771" blue="0.91074657440185547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Phy-iB-Mwa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1YL-Vd-mYN"/>
+                    <constraint firstItem="vna-TF-tmy" firstAttribute="top" secondItem="eLC-2o-vuT" secondAttribute="bottom" constant="2" id="A18-1F-zKC"/>
+                    <constraint firstItem="XSY-5Q-FdW" firstAttribute="top" secondItem="sZb-ZU-EQQ" secondAttribute="bottom" constant="5" id="AMc-pE-hG9"/>
+                    <constraint firstItem="XaJ-Im-p5f" firstAttribute="top" secondItem="eLC-2o-vuT" secondAttribute="bottom" constant="2" id="Ewx-j4-uDh"/>
+                    <constraint firstItem="vna-TF-tmy" firstAttribute="trailing" secondItem="eLC-2o-vuT" secondAttribute="trailing" id="RYK-Ot-2ye"/>
+                    <constraint firstItem="sZb-ZU-EQQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TAi-uS-OPO"/>
+                    <constraint firstItem="XaJ-Im-p5f" firstAttribute="leading" secondItem="eLC-2o-vuT" secondAttribute="leading" id="WdU-E1-laJ"/>
+                    <constraint firstItem="XSY-5Q-FdW" firstAttribute="leading" secondItem="Phy-iB-Mwa" secondAttribute="trailing" constant="10" id="Wsu-ZW-IgE"/>
+                    <constraint firstItem="eLC-2o-vuT" firstAttribute="leading" secondItem="XSY-5Q-FdW" secondAttribute="leading" id="YHv-dl-9u6"/>
+                    <constraint firstItem="eLC-2o-vuT" firstAttribute="top" secondItem="XSY-5Q-FdW" secondAttribute="bottom" constant="10" id="iAk-NA-Zv9"/>
+                    <constraint firstItem="Phy-iB-Mwa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kHx-7u-Qaj"/>
+                    <constraint firstItem="sZb-ZU-EQQ" firstAttribute="leading" secondItem="Phy-iB-Mwa" secondAttribute="trailing" constant="10" id="rDo-cQ-YPv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="progress" destination="eLC-2o-vuT" id="bvV-ay-FFe"/>
+                <outlet property="progressLabel" destination="vna-TF-tmy" id="rlm-1d-nro"/>
+                <outlet property="receivedRedbagLabel" destination="XaJ-Im-p5f" id="te8-6y-35z"/>
+                <outlet property="redbagImageView" destination="Phy-iB-Mwa" id="azh-6Y-S29"/>
+                <outlet property="subTitleLabel" destination="XSY-5Q-FdW" id="p3G-0d-bKD"/>
+                <outlet property="titleLabel" destination="sZb-ZU-EQQ" id="bfE-Ni-eBB"/>
+            </connections>
+            <point key="canvasLocation" x="-111" y="-48"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="train_daily" width="101" height="100"/>
+    </resources>
+</document>

@@ -17,21 +17,9 @@
 
 @implementation YDQSportsBottomTableHeader
 
-+ (instancetype)headerWithTableView:(UITableView *)tableView
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    YDQSportsBottomTableHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:YDQSportsBottomTableHeaderIndetifierId];
-    if (header == nil)
-    {
-        header = [[YDQSportsBottomTableHeader alloc] initWithReuseIdentifier:YDQSportsBottomTableHeaderIndetifierId];
-    }
-    
-    return header;
-}
-
-- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithReuseIdentifier:reuseIdentifier];
-    
+    self = [super initWithFrame:frame];
     if (self)
     {
         [self setUI];
@@ -44,11 +32,11 @@
 
 - (void)setUI
 {
-    self.contentView.backgroundColor = YDQSprotsTableCellBg;
+    self.backgroundColor = YDQSprotsTableCellBg;
     
     // 向下的箭头
     UIButton *arrowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.contentView addSubview:arrowBtn];
+    [self addSubview:arrowBtn];
     
     [arrowBtn setBackgroundImage:[UIImage imageNamed:@"icon_index_slidedown"] forState:UIControlStateNormal];
     [arrowBtn addTarget:self action:@selector(slidDown) forControlEvents:UIControlEventTouchUpInside];
@@ -60,7 +48,7 @@
     
     // 分享步数/开始跑步/开始健身/开始骑行 按钮
     self.doSportBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.contentView addSubview:self.doSportBtn];
+    [self addSubview:self.doSportBtn];
     [self.doSportBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-13.0);
         make.bottom.mas_equalTo(-13.0);

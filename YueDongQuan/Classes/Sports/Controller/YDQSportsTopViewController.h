@@ -16,4 +16,7 @@
 /// 获取当前的运动类型
 - (SportsType)getCurrentSportType;
 
+/// 改变运动类型相应回调
+@property(nonatomic, copy) void (^changeSportsType)(SportsType type);
+
 @end

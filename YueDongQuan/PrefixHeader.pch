@@ -14,10 +14,14 @@
 
 #import "UIView+CLJExtension.h"
 #import "UIBarButtonItem+CLJExtension.h"
+#import "UIImage+CLJExtension.h"
 #import "SYNavigationController.h"
 #import "UIViewController+SYNavigationController.h"
 #import "UIViewController+SYHelper.h"
 #import <Masonry.h>
+
+/////////////////////////////////////////////////////////////
+#pragma mark - 打印log
 
 #ifdef DEBUG
 #define YDQLog(...) NSLog(__VA_ARGS__)
@@ -28,8 +32,20 @@
 /// 打印函数方法信息
 #define YDQLogFunc YDQLog(@"%s",__func__)
 
+
+//////////////////////////////////////////////////////////////////
+#pragma mark - 颜色
+
 /// 颜色
-#define YDQRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+#define YDQRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define YDQRGBColor_Alpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+/// 设置颜色 示例：UIColorHex(0x26A7E8)
+#define UIColorHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0];
+
+/// 设置颜色与透明度 示例：UIColorHEX_Alpha(0x26A7E8, 0.5)
+#define UIColorHex_Alpha(rgbValue, al) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:al];
 
 /// tabBar tintColor
 #define YDQTabBarTintColor YDQRGBColor(42,190,43)
@@ -37,14 +53,21 @@
 /// 随机色
 #define YDQRandomColor YDQRGBColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
 
-#define YDQSprotsTableCellBg YDQRGBColor(30,75,99)
-#define YDQButtonBg YDQRGBColor(64,194,42)
+/// 无色，空颜色
+#define YDQClearColor [UIColor clearColor];
+
+/// 图片，根据颜色设置
+#define YDQImageWithColor(color) [UIImage imageWithColor:color size:CGSizeMake(1.0, 1.0)]
+
+//////////////////////////////////////////////////////////////////
+#pragma mark - 尺寸
+
 /// 屏幕尺寸
 #define YDQScreenWidth [UIScreen mainScreen].bounds.size.width
 #define YDQScreenHeight [UIScreen mainScreen].bounds.size.height
 
 /// 状态栏高度
-#define kStatusHeight 20.0
+#define kStatusBarHeight 20.0
 
 /// weakSelf、stronSelf;
 #define CLJWeakSelf CLJWeakObj(self)
@@ -53,6 +76,8 @@
 #define CLJWeakObj(o) autoreleasepool{} __weak typeof(o) weak##o = o;
 #define CLJStrongObj(o) autoreleasepool{} __strong typeof(o) o = strong##o;
 
+//////////////////////////////////////////////////////////////////
+#pragma mark - 系统
 
 /// System判断
 #define ISiPhone    [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone

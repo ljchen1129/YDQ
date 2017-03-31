@@ -16,6 +16,7 @@
 #import "YDQRedbagViewController.h"
 #import "YDQLevelViewController.h"
 
+
 static CGFloat const kTitleViewX = 50.0;
 static CGFloat const kTitleViewY = 100.0;
 static CGFloat const kTitleViewH = 35.0;
@@ -52,12 +53,9 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 
 - (void)setupUI
 {
-    // 1.不要调整UIScrollView的内边距，不然系统会自动将scrollView的y坐标加64
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    // 2. 添加firstItemTopView
+    // 1. 添加firstItemTopView
     [self.view addSubview:self.firstItemTopView];
-    self.firstItemTopView.frame = CGRectMake(0, kStatusHeight, YDQScreenWidth, 44.0);
+    self.firstItemTopView.frame = CGRectMake(0, kStatusBarHeight, YDQScreenWidth, 44.0);
     
     @CLJWeakSelf;
     self.firstItemTopView.weatherClickCallBack = ^{
@@ -119,16 +117,35 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 
 - (void)pageTitleView:(UIView *)pageTitleView selectedIndex:(int)index
 {
-    self.currentSportType = index;
     [self.contentView setCurrentIndex:index];
+    self.currentSportType = index;
+    
+    [self performSelector:@selector(changeSportsTypeClick) withObject:nil afterDelay:0.2];
+}
+
+- (void)changeSportsTypeClick
+{
+    if (_changeSportsType)
+    {
+        _changeSportsType(self.currentSportType);
+    }
 }
 
 #pragma mark - PageContentViewDelegate
 
-- (void)pageContentView:(UIView *)pageContentView ScrollSourceIndex:(int)sourceIndex targetIndex:(int)targetIndex progress:(CGFloat)progress
+- (void)pageContentView:(UIView *)pageContentView ScrollSourceIndex:(int)sourceIndex targetIndex:(int)targetIndex progress:(CGFloat)progress isSuccesed:(BOOL)isSuccesed
 {
-    self.currentSportType = targetIndex;
     [self.titleView resetTitleViewWithSourceIndex:sourceIndex targetIndex:targetIndex progress:progress];
+    self.currentSportType = targetIndex;
+    
+    // 只用滑动成功才响应回调
+    if (isSuccesed)
+    {
+        if (_changeSportsType)
+        {
+            _changeSportsType(self.currentSportType);
+        }
+    }
 }
 
 #pragma mark - setter
@@ -137,22 +154,18 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 {
     if (!_contentView)
     {
-        NSMutableArray *tempArray = [NSMutableArray array];
-        
+        NSMutableArray *tempArray = [NSMutableArray array]
+        ;
         for (int i = 0; i < 4; ++i)
         {
             UIViewController *childVc = [[UIViewController alloc] init];
-            UILabel *label = [[UILabel alloc] init];
-            label.center = childVc.view.center;
-            label.text = [NSString stringWithFormat:@"第%d页", i];
-            [label sizeToFit];
-            [childVc.view addSubview:label];
-            childVc.view.backgroundColor = YDQRandomColor;
+            childVc.view.backgroundColor = YDQClearColor;
             [tempArray addObject:childVc];
         }
         
         CGRect frame = CGRectMake(0, kContentViewY, YDQScreenWidth, YDQScreenHeight - kContentViewY);
         _contentView = [[YDQMainPageContentView alloc] initWithFrame:frame controllers:tempArray parnentVc:self];
+        _contentView.backgroundColor = YDQClearColor;
         _contentView.delegate = self;
     }
     

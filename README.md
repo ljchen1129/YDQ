@@ -98,16 +98,18 @@ pod update # 更新第三方库
 >注意: 执行 pod install / update 命令的时候会升级 CocoaPods 的 spec 仓库，加一个参数可以省略这一步，然后速度就会提升不少。加参数的命令如下：
 
 >```
-# 安装
+// 安装
 pod install --verbose --no-repo-update
-# 更新
+// 更新
 pod update --verbose --no-repo-update
 
 >```
 
 ![](http://o6heygfyq.bkt.clouddn.com/Snip20170322_7.png?imageView2/0/w/400)
 
+
 ### 网络请求/数据处理/数据缓存层封装
+
 
 ### 界面分析-首页
 
@@ -125,7 +127,8 @@ pod update --verbose --no-repo-update
 
 ![](http://o6heygfyq.bkt.clouddn.com/Snip20170322_5.png?imageView2/0/w/600)
 
-#### 第一步
+
+#### #第一步
 
 按照 UI 视图的层次结构，遵循从父视图到子视图，从上到下的顺序进行页面布局，先搭建最下面的那个 collectionView，然后搭建 collectionView 第一个 item 里面的 UI，一个是 pageTitleView，一个是 pageContentView，并且这两个 view，在很多界面都能用得到，属于公共的 UI 组建，应该封装起来，第一步实现下过如下：
 
@@ -136,16 +139,27 @@ pod update --verbose --no-repo-update
 >>2. pageTitleView 和 pageContentView 之间互相的响应传值；
 >>3. 在 viewDidLoad 的方法里告诉控制器，不要调整UIScrollView的内边距，将`automaticallyAdjustsScrollViewInsets` 属性要设置为 `NO`，不然系统会自动将 scrollView 的 y 坐标加 64。
 
-#### 第二步
+
+#### #第二步
 
 1. 搭建第一个 item
 	- 顶部几个 view，天气、钥匙、红包、等级；
-		
-	- 中间的圆环视图，cycleView，下面的几个按钮，寻宝、分享得红包之类；
+	- 中间的圆环视图，cycleView，cycleView 这个视图可以复用，下面的几个按钮，寻宝、分享得红包之类；
 	- 最下面的两个跳转 url 的广告按钮，一个指示上拖的箭头按钮；
 
 
 2. 搭建第二个 item
+	- 主体是一个 tableView，首尾各有一个悬浮的 header，一个 footer
+	- 中间分为 5 个 section
+		- 第一个 section，没有section 头和 section 尾，有运动数据 cell、体重/体脂 cell，其中体重/体脂 cell的显示可通过配置决定是否显示;
+		- 第二个 secion，包含一个 section 头和 section 尾，有一个新成就 cell；
+		- 第三个 section，包含一个 section 头和 section 尾，由一个运动干货 cell，若干个 nomalCell 组成；
+		- 第四个 section，包含一个 section 头和 section 尾，若干个 nomalCell 组成；
+		- 第四个 section，同样包含一个 section 头和 section 尾，一个 nomalCell；
+	- 根据当前显示的 sports 类型，控制器的背景图片也要相应的切换。
+
+
+#### #效果
 
 
 
