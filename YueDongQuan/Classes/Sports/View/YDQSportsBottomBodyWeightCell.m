@@ -51,12 +51,12 @@
 
 - (void)setUI
 {
-    self.labelBackgroundView.backgroundColor = YDQRGBColor(58, 78, 76);
+    self.labelBackgroundView.backgroundColor = UIColorRGB(58, 78, 76);
     self.labelBackgroundView.layer.cornerRadius = 10.0;
     self.labelBackgroundView.layer.masksToBounds = YES;
     
     self.contentView.backgroundColor = YDQSprotsBottomBodyWeightCellBg;
-    self.backgroundColor = YDQClearColor;
+    self.backgroundColor = [UIColor clearColor];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 

@@ -11,14 +11,14 @@
 #ifndef YDQSportsHeader_h
 #define YDQSportsHeader_h
 
-#define YDQSprotsTableCellBg YDQRGBColor_Alpha(30,75,99,1.0)
+#define YDQSprotsTableCellBg UIColorRGB_Alpha(30,75,99,1.0)
 
-#define YDQSprotsBottomSportsDataCellBg YDQRGBColor_Alpha(42,79,99,0.7)
-#define YDQSprotsBottomBodyWeightCellBg YDQRGBColor_Alpha(65,79,64,0.6)
-#define YDQSprotsBottomNewAchievementCellBg YDQRGBColor_Alpha(49,80,95,0.5)
+#define YDQSprotsBottomSportsDataCellBg UIColorRGB_Alpha(42,79,99,0.7)
+#define YDQSprotsBottomBodyWeightCellBg UIColorRGB_Alpha(65,79,64,0.6)
+#define YDQSprotsBottomNewAchievementCellBg UIColorRGB_Alpha(49,80,95,0.5)
 
 /// 按钮背景色
-#define YDQButtonBg YDQRGBColor(64,194,42)
+#define YDQButtonBg UIColorRGB(64,194,42)
 
 /// 运动类型
 typedef NS_ENUM(NSUInteger, SportsType) {

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegateConfiguration.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,8 @@
     
     // 修改TabBar的全局颜色
     [UITabBar appearance].tintColor = YDQTabBarTintColor;
+    
+    [AppDelegateConfiguration Configuration];
     
     return YES;
 }

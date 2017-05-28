@@ -50,7 +50,7 @@
 - (void)setUI
 {
     self.contentView.backgroundColor = YDQSprotsBottomSportsDataCellBg;
-    self.backgroundColor = YDQClearColor;
+    self.backgroundColor = [UIColor clearColor];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 

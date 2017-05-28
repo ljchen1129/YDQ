@@ -75,7 +75,7 @@ static NSTimeInterval const kDurationTime = 0.15;
         NSString *text = self.titles[i];
         label.text = text;
         label.font = [UIFont systemFontOfSize:15.0];
-        label.textColor = YDQRGBColor([kNormalColor[@"red"] intValue], [kNormalColor[@"green"] intValue], [kNormalColor[@"blue"] intValue]);
+        label.textColor = UIColorRGB([kNormalColor[@"red"] intValue], [kNormalColor[@"green"] intValue], [kNormalColor[@"blue"] intValue]);
         label.textAlignment = NSTextAlignmentCenter;
         label.tag = kLabelTag + i;
         
@@ -96,7 +96,7 @@ static NSTimeInterval const kDurationTime = 0.15;
 - (void)setupScrollLine
 {
     UILabel *fristLable = [self.titleLabels firstObject];
-    fristLable.textColor = YDQRGBColor([kSelectedColor[@"red"] intValue], [kSelectedColor[@"green"] intValue], [kSelectedColor[@"blue"] intValue]);
+    fristLable.textColor = UIColorRGB([kSelectedColor[@"red"] intValue], [kSelectedColor[@"green"] intValue], [kSelectedColor[@"blue"] intValue]);
     CGFloat scrollLineX = fristLable.clj_x + (fristLable.clj_width - kScrollLineW) / 2;
     self.scrollLine = [[UIView alloc] initWithFrame:CGRectMake(scrollLineX, fristLable.clj_height - kScrollLineH, kScrollLineW, kScrollLineH)];
     self.scrollLine.backgroundColor = [UIColor orangeColor];
@@ -127,8 +127,8 @@ static NSTimeInterval const kDurationTime = 0.15;
     CGFloat blueDelta = ([kNormalColor[@"blue"] intValue] - [kSelectedColor[@"blue"] intValue]) * progress;
     
     // 注意：sourceLabel 和 targetLabel的颜色设置不能调换顺序
-    sourceLabel.textColor = YDQRGBColor([kSelectedColor[@"red"] intValue] + redDelta, [kSelectedColor[@"green"] intValue] + greenDelta, [kSelectedColor[@"blue"] intValue] + blueDelta);
-    targetLabel.textColor = YDQRGBColor([kNormalColor[@"red"] intValue] - redDelta, [kNormalColor[@"green"] intValue] - greenDelta, [kNormalColor[@"blue"] intValue] - blueDelta);
+    sourceLabel.textColor = UIColorRGB([kSelectedColor[@"red"] intValue] + redDelta, [kSelectedColor[@"green"] intValue] + greenDelta, [kSelectedColor[@"blue"] intValue] + blueDelta);
+    targetLabel.textColor = UIColorRGB([kNormalColor[@"red"] intValue] - redDelta, [kNormalColor[@"green"] intValue] - greenDelta, [kNormalColor[@"blue"] intValue] - blueDelta);
     
     // 4.更新当前索引
     self.currentIndex = targetIndex;
@@ -139,14 +139,14 @@ static NSTimeInterval const kDurationTime = 0.15;
 - (void)lableTapClick:(UITapGestureRecognizer *)gesture
 {
     UILabel *currentlabel = (UILabel *)gesture.view;
-    currentlabel.textColor = YDQRGBColor([kSelectedColor[@"red"] intValue], [kSelectedColor[@"green"] intValue], [kSelectedColor[@"blue"] intValue]);
+    currentlabel.textColor = UIColorRGB([kSelectedColor[@"red"] intValue], [kSelectedColor[@"green"] intValue], [kSelectedColor[@"blue"] intValue]);
     [UIView animateWithDuration:kDurationTime animations:^{
         self.scrollLine.clj_x = currentlabel.center.x - kScrollLineW / 2;
     }];
 
     // 获取之前的label
     UILabel *oldLabel = self.titleLabels[self.currentIndex];
-    oldLabel.textColor = YDQRGBColor([kNormalColor[@"red"] intValue], [kNormalColor[@"green"] intValue], [kNormalColor[@"blue"] intValue]);
+    oldLabel.textColor = UIColorRGB([kNormalColor[@"red"] intValue], [kNormalColor[@"green"] intValue], [kNormalColor[@"blue"] intValue]);
     
     // 保存最新的索引值
     self.currentIndex = (int)(currentlabel.tag - kLabelTag);

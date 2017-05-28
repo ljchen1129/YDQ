@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = YDQRandomColor;
+    self.view.backgroundColor = UIRandomColor;
 }
 
 @end

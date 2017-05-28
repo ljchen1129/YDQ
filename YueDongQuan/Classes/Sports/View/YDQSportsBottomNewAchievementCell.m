@@ -56,13 +56,13 @@
 {
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.contentView.backgroundColor = YDQSprotsBottomNewAchievementCellBg;
-    self.backgroundColor = YDQClearColor;
+    self.backgroundColor = [UIColor clearColor];
     
     //    self.redbagImageView.image = [UIImage imageNamed:@""];
-    self.subTitleLabel.textColor = YDQRGBColor(169, 187, 159);
-    self.receivedRedbagLabel.textColor = YDQRGBColor(169, 187, 159);
-    self.progressLabel.textColor = YDQRGBColor(169, 187, 159);
-    self.progress.trackTintColor = YDQRGBColor(74, 105, 117);
+    self.subTitleLabel.textColor = UIColorRGB(169, 187, 159);
+    self.receivedRedbagLabel.textColor = UIColorRGB(169, 187, 159);
+    self.progressLabel.textColor = UIColorRGB(169, 187, 159);
+    self.progress.trackTintColor = UIColorRGB(74, 105, 117);
     self.progress.progressTintColor = YDQButtonBg;
     self.sepLine.backgroundColor = [UIColor lightGrayColor];
 }

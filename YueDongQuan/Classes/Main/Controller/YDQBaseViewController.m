@@ -105,7 +105,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     //    [BaseIceModel requestRelease];
-    YDQLog(@"%@释放了",NSStringFromClass([self class]));
+    DLog(@"%@释放了",NSStringFromClass([self class]));
 }
 
 #pragma mark - 异常判断

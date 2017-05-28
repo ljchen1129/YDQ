@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     self.navigationController.delegate = self;
-    self.view.backgroundColor = YDQRGBColor(43, 89, 118);
+    self.view.backgroundColor = UIColorRGB(43, 89, 118);
     [self.view addSubview:self.contentView];
 }
 
@@ -48,9 +48,9 @@
     if (!_contentView)
     {
         _contentView = [[YDQSportsContainerView alloc] initWithFrame:self.view.bounds controllers:@[self.topVc, self.bottomVc] parnentVc:self];
-        @CLJWeakSelf
+        kSelfWeak;
         _contentView.slidUpCallBack = ^(SportsType type){
-            weakself.bottomVc.sportsType = type;
+            weakSelf.bottomVc.sportsType = type;
         };
     }
     
@@ -62,14 +62,14 @@
     if (!_topVc)
     {
         _topVc = [[YDQSportsTopViewController alloc] init];
-        @CLJWeakSelf
+        kSelfWeak;
         _topVc.slidUpCallBack = ^(SportsType type){
-            [weakself.contentView setCurrentIndex:1];
-            weakself.bottomVc.sportsType = type;
+            [weakSelf.contentView setCurrentIndex:1];
+            weakSelf.bottomVc.sportsType = type;
         };
         
         _topVc.changeSportsType = ^(SportsType type) {
-            weakself.view.backgroundColor = YDQRandomColor;
+            weakSelf.view.backgroundColor = UIRandomColor;
         };
     }
     
@@ -81,10 +81,10 @@
     if (!_bottomVc)
     {
         _bottomVc = [[YDQSportsBottomViewController alloc] init];
-        _bottomVc.view.backgroundColor = YDQClearColor;
-        @CLJWeakSelf
+        _bottomVc.view.backgroundColor = [UIColor clearColor];
+        kSelfWeak;
         _bottomVc.slidDown = ^{
-            [weakself.contentView setCurrentIndex:0];
+            [weakSelf.contentView setCurrentIndex:0];
         };
     }
     

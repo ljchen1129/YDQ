@@ -18,8 +18,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"等级";
-    self.view.backgroundColor = YDQRandomColor;
+    self.view.backgroundColor = UIRandomColor;
 }
-
 
 @end

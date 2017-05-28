@@ -18,6 +18,8 @@
 #import "YDQSportsBottomNewAchievementCell.h"
 #import "YDQSportsBottomSportsDrysCell.h"
 #import "YDQSportsBottomNomalCell.h"
+#import "YDQSportsModel.h"
+#import <AFNetworking.h>
 
 static CGFloat const kTableViewContentInsetBottom = 60.0;
 
@@ -40,6 +42,51 @@ static CGFloat const kTableViewContentInsetBottom = 60.0;
     
     // 设置UI
     [self setUI];
+    
+    // 请求网络数据
+    [self loadData];
+}
+
+- (void)loadData
+{
+    NSMutableDictionary *parms = [NSMutableDictionary dictionary];
+    parms[@"user_id"] = @149688199;
+    parms[@"topic_id"] = @16993467;
+    parms[@"oper_type"] = @"specify";
+    parms[@"from"] = @"homepage";
+    parms[@"f"] = @"ios";
+    parms[@"v"] = @"3.8.8";
+//    parms[@"language"] = @"zh-Hans";
+//    parms[@"locale"] = @"CN";
+//    parms[@"os"] = @"10.3.1";
+//    parms[@"phone_type"] = @"iPhoneSE";
+////    parms[@"sign"] = @"xcAtvuGEqLhXIsHbW7sB26VsAVY%3D";
+//    parms[@"source"] = @"ios";
+//    parms[@"user_id"] = @"149688120";
+//    parms[@"ver"] = @"3.3.8";
+//    parms[@"xyy"] = @"zpxnw1gvf4m9d6hr";
+//    user_id=149688199&topic_id=16993467&oper_type=specify&sid=zpxnw1gvf4m9d6hr
+    
+//    begin_cnt=0&client_user_id=149688199&device_id=idfa_B2CFB040-8C32-47C4-9824-375793F4B0E5&end_cnt=1&kind_id=3&language=zh-Hans&locale=CN&os=10.3.1&phone_type=iPhoneSE&sign=xcAtvuGEqLhXIsHbW7sB26VsAVY%3D&source=ios&timezone=%2B8&user_id=149688199&ver=3.3.8&xyy=zpxnw1gvf4m9d6hr
+    
+//    [YDQSportsModel requestPOSTWithUrl:@"https://sslsharecircle.51yund.com/circle/topicSubject?topic_id=16993467&oper_type=specify&f=ios&user_id=149688199&v=3.3.8&from=homepage" paramtes:parms modelClass:[YDQSportsModel class] target:self complete:^(BaseModel *baseModel) {
+//        
+//    }];
+    
+    [YDQSportsModel requestGETWithUrl:@"https://sslsharecircle.51yund.com/circle/topicSubject?topic_id=16993467&oper_type=specify&f=ios&user_id=149688199&v=3.3.8&from=homepage" paramtes:nil modelClass:[YDQSportsModel class]
+hudType:RequestHUDTypeDefault target:self enableView:YES complete:^(BaseModel *baseModel) {
+    
+}];
+    
+
+    
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    [manager GET:@"http://api.budejie.com/api/api_open.php?a=category&c=subscribe" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+//        NSLog(@"JSON: %@", responseObject);
+//    } failure:^(NSURLSessionTask *operation, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//    }];
+
 }
 
 #pragma mark - UI
@@ -67,7 +114,7 @@ static CGFloat const kTableViewContentInsetBottom = 60.0;
     }];
     
     // footer
-    YDQSportsBottomTableFooter *footer = [[YDQSportsBottomTableFooter alloc] initWithFrame:CGRectMake(0, 0, YDQScreenWidth, 100.0)];
+    YDQSportsBottomTableFooter *footer = [[YDQSportsBottomTableFooter alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 100.0)];
     self.tableView.tableFooterView = footer;
 }
 
@@ -115,14 +162,14 @@ static CGFloat const kTableViewContentInsetBottom = 60.0;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    @CLJWeakSelf;
+    kSelfWeak;
     if (0 == indexPath.section)
     {
         if (indexPath.row == 0)
         {
             YDQSportsBottomSportsDataCell *cell = [YDQSportsBottomSportsDataCell cellWithTableView:tableView index:indexPath];
             cell.sportsDataBtnClick = ^{
-                YDQLog(@"sportsDataBtnClick");
+                DLog(@"sportsDataBtnClick");
             };
             return cell;
         }
@@ -130,7 +177,7 @@ static CGFloat const kTableViewContentInsetBottom = 60.0;
         {
             YDQSportsBottomBodyWeightCell *cell = [YDQSportsBottomBodyWeightCell cellWithTableView:tableView index:indexPath];
             cell.goWeightManagerClick = ^{
-                YDQLog(@"goWeightManagerClick");
+                DLog(@"goWeightManagerClick");
             };
             return cell;
         }
@@ -269,7 +316,7 @@ static CGFloat const kTableViewContentInsetBottom = 60.0;
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTableViewContentInsetBottom, 0);
-        _tableView.backgroundColor = YDQClearColor;
+        _tableView.backgroundColor = [UIColor clearColor];
     }
     
     return _tableView;
@@ -280,16 +327,16 @@ static CGFloat const kTableViewContentInsetBottom = 60.0;
     if (!_header)
     {
         _header = [[YDQSportsBottomTableHeader alloc] initWithFrame:CGRectZero];
-        @CLJWeakSelf;
+        kSelfWeak;
         _header.sildDown = ^{
-            if (weakself.slidDown)
+            if (weakSelf.slidDown)
             {
-                weakself.slidDown();
+                weakSelf.slidDown();
             }
         };
         
         _header.doSportsCallBack = ^(SportsType type) {
-            YDQLog(@"type:%ld", type);
+            DLog(@"type:%ld", type);
         };
     }
     

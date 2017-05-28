@@ -51,8 +51,8 @@
 
 - (void)setUI
 {
-    self.contentView.backgroundColor = YDQRGBColor(67, 86, 82);
-    self.backgroundColor = YDQClearColor;
+    self.contentView.backgroundColor = UIColorRGB(67, 86, 82);
+    self.backgroundColor = [UIColor clearColor];
     self.selectionStyle = UITableViewCellSelectionStyleBlue;
     self.imageView.image = [UIImage imageNamed:@"train_daily"];
     self.textLabel.numberOfLines = 0;

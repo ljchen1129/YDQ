@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"我的钥匙";
     
-    self.view.backgroundColor = YDQRandomColor;
+    self.view.backgroundColor = UIRandomColor;
 }
 
 @end

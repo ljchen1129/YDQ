@@ -21,6 +21,8 @@ static CGFloat const kTitleViewX = 50.0;
 static CGFloat const kTitleViewY = 100.0;
 static CGFloat const kTitleViewH = 35.0;
 static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
+static CGFloat const kCircleViewY = 35.0;
+static CGFloat const kCircleViewWH = 230.0;
 
 @interface YDQSportsTopViewController () <PageTitleViewDelegate, PageContentViewDelegate>
 
@@ -55,27 +57,27 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
 {
     // 1. 添加firstItemTopView
     [self.view addSubview:self.firstItemTopView];
-    self.firstItemTopView.frame = CGRectMake(0, kStatusBarHeight, YDQScreenWidth, 44.0);
+    self.firstItemTopView.frame = CGRectMake(0, kStatusBarHeight, kScreenWidth, 44.0);
     
-    @CLJWeakSelf;
+    kSelfWeak;
     self.firstItemTopView.weatherClickCallBack = ^{
         YDQWeatherViewController *weatherVc = [[YDQWeatherViewController alloc] init];
-        [weakself.navigationController pushViewController:weatherVc animated:YES];
+        [weakSelf.navigationController pushViewController:weatherVc animated:YES];
     };
     
     self.firstItemTopView.keyBtnClickCallBack = ^{
         YDQKeyViewController *keyVc = [[YDQKeyViewController alloc] init];
-        [weakself.navigationController pushViewController:keyVc animated:YES];
+        [weakSelf.navigationController pushViewController:keyVc animated:YES];
     };
     
     self.firstItemTopView.redbagBtnClickCallBack = ^{
         YDQRedbagViewController *redbagVc = [[YDQRedbagViewController alloc] init];
-        [weakself.navigationController pushViewController:redbagVc animated:YES];
+        [weakSelf.navigationController pushViewController:redbagVc animated:YES];
     };
     
     self.firstItemTopView.levelBtnClickCallBack = ^{
         YDQLevelViewController *levelVc = [[YDQLevelViewController alloc] init];
-        [weakself.navigationController pushViewController:levelVc animated:YES];
+        [weakSelf.navigationController pushViewController:levelVc animated:YES];
     };
     
     // 3. 添加titleView
@@ -159,13 +161,18 @@ static CGFloat const kContentViewY = kTitleViewY + kTitleViewH;
         for (int i = 0; i < 4; ++i)
         {
             UIViewController *childVc = [[UIViewController alloc] init];
-            childVc.view.backgroundColor = YDQClearColor;
+            childVc.view.backgroundColor = [UIColor clearColor];
+            PNCircleChart *circleChart = [[PNCircleChart alloc] initWithFrame:CGRectMake((kScreenWidth - kCircleViewWH) / 2, kCircleViewY, kCircleViewWH, kCircleViewWH) total:@100 current:@60 clockwise:NO];
+           
+            [circleChart setStrokeColor:PNGreen];
+            [circleChart strokeChart];
+            [childVc.view addSubview:circleChart];
             [tempArray addObject:childVc];
         }
         
-        CGRect frame = CGRectMake(0, kContentViewY, YDQScreenWidth, YDQScreenHeight - kContentViewY);
+        CGRect frame = CGRectMake(0, kContentViewY, kScreenWidth, kScreenHeight - kContentViewY);
         _contentView = [[YDQMainPageContentView alloc] initWithFrame:frame controllers:tempArray parnentVc:self];
-        _contentView.backgroundColor = YDQClearColor;
+        _contentView.backgroundColor = [UIColor clearColor];
         _contentView.delegate = self;
     }
     

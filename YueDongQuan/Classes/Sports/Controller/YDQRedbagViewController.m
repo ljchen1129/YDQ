@@ -19,7 +19,7 @@
     
     self.navigationItem.title = @"红包小助手";
     
-    self.view.backgroundColor = YDQRandomColor;
+    self.view.backgroundColor = UIRandomColor;
 }
 
 @end

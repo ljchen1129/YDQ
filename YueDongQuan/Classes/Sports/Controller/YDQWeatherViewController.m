@@ -20,9 +20,9 @@
     
     self.navigationItem.title = @"黄历天气";
     
-    self.view.backgroundColor = YDQRandomColor;
+    self.view.backgroundColor = UIRandomColor;
     
-    YDQLog(@"%@",self.navigationController.childViewControllers);
+    DLog(@"%@",self.navigationController.childViewControllers);
 }
 
 

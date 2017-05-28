@@ -89,7 +89,7 @@
     if (!_titleLabel)
     {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _titleLabel.textColor = YDQRGBColor(83, 102, 106);
+        _titleLabel.textColor = UIColorRGB(83, 102, 106);
         _titleLabel.font = [UIFont systemFontOfSize:15.0];
         _titleLabel.textAlignment = NSTextAlignmentLeft;
     }

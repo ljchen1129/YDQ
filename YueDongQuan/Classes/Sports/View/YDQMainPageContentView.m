@@ -91,7 +91,7 @@ static NSString *const kCollectionViewCellIdentifier = @"collectionViewCellIdent
         _collectionView.pagingEnabled = YES;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
-        _collectionView.backgroundColor = YDQClearColor;
+        _collectionView.backgroundColor = [UIColor clearColor];
     }
     
     return _collectionView;
